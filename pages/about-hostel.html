@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>About Hostel - Vagdevi Ladies Hostel</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.60),
+                    rgba(0, 0, 0, 0.60)
+                ),
+                url("../images/hostel.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 19px;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.96);
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            margin-bottom: 25px;
+
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.20);
+        }
+
+        .content-box h2 {
+            color: #7b1fa2;
+
+            margin-bottom: 15px;
+
+            font-size: 25px;
+        }
+
+        .content-box p {
+            color: #444;
+
+            line-height: 1.8;
+
+            margin-bottom: 13px;
+
+            font-size: 16px;
+        }
+
+        .timeline {
+            display: grid;
+
+            gap: 15px;
+        }
+
+        .timeline-item {
+            background: #f8f1fa;
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            border-left: 5px solid #7b1fa2;
+        }
+
+        .timeline-item h3 {
+            color: #7b1fa2;
+
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            margin-bottom: 0;
+        }
+
+        .people-list {
+            padding-left: 25px;
+
+            color: #444;
+
+            line-height: 2;
+
+            font-size: 16px;
+        }
+
+        .facility-list {
+            padding-left: 25px;
+
+            color: #444;
+
+            line-height: 2;
+        }
+
+        .donation-box {
+            background: #f8f1fa;
+
+            padding: 20px;
+
+            border-radius: 12px;
+
+            margin-top: 15px;
+        }
+
+        .donation-box h3 {
+            color: #7b1fa2;
+
+            margin-bottom: 12px;
+        }
+
+        .bank-details {
+            line-height: 1.9;
+
+            color: #444;
+        }
+
+        .bank-details strong {
+            color: #333;
+        }
+
+        .appeal {
+            background: #f3e5f5;
+
+            border-left: 5px solid #7b1fa2;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            color: #444;
+
+            line-height: 1.8;
+        }
+
+        .back-button {
+            display: block;
+
+            width: 190px;
+
+            margin: 30px auto 0;
+
+            padding: 12px;
+
+            background: white;
+
+            color: #7b1fa2;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+        }
+
+        .back-button:hover {
+            background: #f3e5f5;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 20px 12px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .content-box {
+                padding: 22px 18px;
+            }
+
+            .content-box h2 {
+                font-size: 22px;
+            }
+
+            .content-box p {
+                font-size: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1 id="hostelName">
+                Vagdevi Ladies Hostel
+            </h1>
+
+            <p id="pageTitle">
+                About Our Hostel
+            </p>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="introTitle">
+                Vagdevi Vidyarthini Nilaya
+            </h2>
+
+            <p id="introText1">
+                Kunchitigara Sarvajanika Seva Datti (R.) -
+                Vagdevi Vidyarthini Nilaya was established
+                to support girls, especially those from rural
+                and economically weaker families, in pursuing
+                higher education.
+            </p>
+
+            <p id="introText2">
+                The organization was founded in 2001 under
+                the Indian Trust Act with the motto:
+                <strong>
+                    "There is nothing as sacred as knowledge
+                    in this world."
+                </strong>
+            </p>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="journeyTitle">
+                Our Journey
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3 id="year2001">
+                        2001 - Organization Founded
+                    </h3>
+
+                    <p id="year2001Text">
+                        Kunchitigara Sarvajanika Seva Datti (R.)
+                        was registered in 2001 under the Indian
+                        Trust Act to support education and
+                        students.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3 id="landTitle">
+                        Land Donation
+                    </h3>
+
+                    <p id="landText">
+                        Mr. B.R. Rajeev donated 10 guntas of
+                        land in Hegganahalli, Bengaluru,
+                        for establishing a girls' hostel.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3 id="earlySupportTitle">
+                        Early Support for Students
+                    </h3>
+
+                    <p id="earlySupportText">
+                        Before the hostel building was
+                        constructed, Smt. Jyothi Balakrishna
+                        and other donors provided free
+                        accommodation for students in their
+                        homes for several years.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3 id="buildingTitle">
+                        2008 - Hostel Building
+                    </h3>
+
+                    <p id="buildingText">
+                        A hostel building costing approximately
+                        ₹1.5 crore was constructed through
+                        donations and inaugurated in 2008.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3 id="expansionTitle">
+                        2023 - Third Floor Expansion
+                    </h3>
+
+                    <p id="expansionText">
+                        Due to increasing demand, construction
+                        of an additional third floor began in
+                        October 2023 using trust funds.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="content-box">
+
+            <h2 id="peopleTitle">
+                People Who Supported the Hostel
+            </h2>
+
+            <p id="peopleIntro">
+                Before the hostel building was constructed,
+                several generous people provided accommodation
+                and support to girl students.
+            </p>
+
+            <ul class="people-list">
+
+                <li>
+                    <strong>
+                        Smt. Jyothi Balakrishna
+                    </strong>
+                </li>
+
+                <li>
+                    <strong>
+                        Shakuntala Ramesh
+                    </strong>
+                </li>
+
+                <li>
+                    <strong>
+                        Smt. Gowramma Srinivasaiah
+                    </strong>
+                </li>
+
+                <li>
+                    <strong>
+                        Smt. Suvarna Lingraja
+                    </strong>
+                </li>
+
+                <li>
+                    <strong>
+                        Shobha Chandrashekar
+                    </strong>
+                </li>
+
+                <li>
+                    <strong>
+                        Smt. Leela Somshekhar
+                    </strong>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="capacityTitle">
+                Hostel Capacity
+            </h2>
+
+            <p id="capacityText1">
+                The hostel has 22 rooms and can accommodate
+                approximately 80-85 students.
+            </p>
+
+            <p id="capacityText2">
+                More than 2,000 students have benefited from
+                the hostel so far, including students from
+                the Kunchitigara community and other communities.
+            </p>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="facilitiesTitle">
+                Facilities and Student Support
+            </h2>
+
+            <p id="facilitiesIntro">
+                The hostel provides basic facilities and
+                support to help students continue their
+                education in Bengaluru.
+            </p>
+
+            <ul class="facility-list">
+
+                <li id="facility1">
+                    Accommodation
+                </li>
+
+                <li id="facility2">
+                    Clean and healthy food
+                </li>
+
+                <li id="facility3">
+                    Drinking water
+                </li>
+
+                <li id="facility4">
+                    24-hour hot water
+                </li>
+
+                <li id="facility5">
+                    Computer laboratory access
+                </li>
+
+                <li id="facility6">
+                    Support for higher education
+                </li>
+
+            </ul>
+
+            <p id="costText">
+                The hostel operates on a non-profit basis,
+                with students contributing towards actual
+                expenses such as food, electricity, water
+                and staff-related costs.
+            </p>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="expansionSectionTitle">
+                Third Floor Expansion
+            </h2>
+
+            <p id="expansionSectionText">
+                Due to the increasing demand for accommodation,
+                the trust started construction of additional
+                rooms on the third floor in 2023.
+            </p>
+
+            <p id="expansionPurpose">
+                The additional rooms are intended to support
+                girls pursuing medical studies, engineering,
+                competitive examinations and other higher
+                education.
+            </p>
+
+            <div class="appeal">
+
+                <strong id="appealTitle">
+                    Appeal for Support
+                </strong>
+
+                <p id="appealText">
+                    The organization welcomes financial and
+                    material support from generous donors to
+                    complete the additional rooms for students.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="sponsorshipTitle">
+                Room Sponsorship
+            </h2>
+
+            <div class="donation-box">
+
+                <h3 id="sponsorshipAmount">
+                    ₹5,00,000 (5 Lakhs) per room
+                </h3>
+
+                <p id="sponsorshipText">
+                    A donor can sponsor a complete room.
+                    The donor's name and photograph can be
+                    displayed outside the sponsored room.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="bankTitle">
+                Donation Bank Details
+            </h2>
+
+            <div class="donation-box">
+
+                <div class="bank-details">
+
+                    <p>
+                        <strong id="accountNameLabel">
+                            Account Name:
+                        </strong>
+
+                        <span>
+                            Kunchitigara Sarvajanika Seva Trust
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong id="bankNameLabel">
+                            Bank:
+                        </strong>
+
+                        <span>
+                            Canara Bank, Hegganahalli Branch,
+                            Bengaluru
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong id="accountNumberLabel">
+                            Current Account No.:
+                        </strong>
+
+                        <span>
+                            120000088187
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong id="ifscLabel">
+                            IFSC Code:
+                        </strong>
+
+                        <span>
+                            CNRB0003196
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong id="panLabel">
+                            PAN:
+                        </strong>
+
+                        <span>
+                            AABTA08354
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="content-box">
+
+            <h2 id="contactTitle">
+                Contact
+            </h2>
+
+            <p id="contactText">
+                For further information and support,
+                please contact the hostel organization.
+            </p>
+
+            <p>
+                <strong>
+                    9448687451
+                </strong>
+            </p>
+
+            <p>
+                <strong>
+                    9845194883
+                </strong>
+            </p>
+
+        </div>
+
+
+        <a href="dashboard.html"
+           class="back-button"
+           id="backButton">
+
+            ← Back to Dashboard
+
+        </a>
+
+    </div>
+    <script>
+
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
+
+
+        if (selectedLanguage === "Kannada") {
+
+            document.documentElement.lang = "kn";
+
+
+            document.getElementById("pageTitle").textContent =
+                "ನಮ್ಮ ವಸತಿ ನಿಲಯದ ಬಗ್ಗೆ";
+
+
+            document.getElementById("introTitle").textContent =
+                "ವಾಗ್ದೇವಿ ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯ";
+
+
+            document.getElementById("introText1").textContent =
+                "ಕುಂಚಿಟಿಗರ ಸಾರ್ವಜನಿಕ ಸೇವಾ ದತ್ತಿ (ರಿ.) - " +
+                "ವಾಗ್ದೇವಿ ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯವನ್ನು ಗ್ರಾಮೀಣ ಮತ್ತು " +
+                "ಆರ್ಥಿಕವಾಗಿ ಹಿಂದುಳಿದ ಕುಟುಂಬಗಳ ಹೆಣ್ಣುಮಕ್ಕಳು " +
+                "ಉನ್ನತ ಶಿಕ್ಷಣ ಪಡೆಯಲು ಸಹಾಯ ಮಾಡುವ ಉದ್ದೇಶದಿಂದ " +
+                "ಸ್ಥಾಪಿಸಲಾಗಿದೆ.";
+
+
+            document.getElementById("introText2").innerHTML =
+                "ಈ ಸಂಸ್ಥೆಯನ್ನು ಭಾರತೀಯ ಟ್ರಸ್ಟ್ ಕಾಯ್ದೆಯಡಿ " +
+                "2001ರಲ್ಲಿ ಸ್ಥಾಪಿಸಲಾಯಿತು. ಸಂಸ್ಥೆಯ ಧ್ಯೇಯವಾಕ್ಯ: " +
+                "<strong>\"ಈ ಲೋಕದಲ್ಲಿ ಜ್ಞಾನಕ್ಕಿಂತ ಪವಿತ್ರವಾದುದು " +
+                "ಬೇರೊಂದಿಲ್ಲ.\"</strong>";
+
+
+            document.getElementById("journeyTitle").textContent =
+                "ನಮ್ಮ ಪಯಣ";
+
+
+            document.getElementById("year2001").textContent =
+                "2001 - ಸಂಸ್ಥೆಯ ಸ್ಥಾಪನೆ";
+
+
+            document.getElementById("year2001Text").textContent =
+                "ಕುಂಚಿಟಿಗರ ಸಾರ್ವಜನಿಕ ಸೇವಾ ದತ್ತಿ (ರಿ.) ಸಂಸ್ಥೆಯನ್ನು " +
+                "ಶಿಕ್ಷಣ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳ ನೆರವಿಗಾಗಿ ಭಾರತೀಯ ಟ್ರಸ್ಟ್ " +
+                "ಕಾಯ್ದೆಯಡಿ 2001ರಲ್ಲಿ ನೋಂದಾಯಿಸಲಾಯಿತು.";
+
+
+            document.getElementById("landTitle").textContent =
+                "ಭೂಮಿ ದಾನ";
+
+
+            document.getElementById("landText").textContent =
+                "ಶ್ರೀ ಬಿ.ಆರ್. ರಾಜೀವ್ ಅವರು ಬೆಂಗಳೂರಿನ ಹೆಗ್ಗನಹಳ್ಳಿಯಲ್ಲಿ " +
+                "ಹೆಣ್ಣುಮಕ್ಕಳ ವಸತಿ ನಿಲಯ ಸ್ಥಾಪಿಸಲು 10 ಗುಂಟೆ ಜಮೀನನ್ನು " +
+                "ದಾನವಾಗಿ ನೀಡಿದರು.";
+
+
+            document.getElementById("earlySupportTitle").textContent =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರಿಗೆ ಆರಂಭಿಕ ನೆರವು";
+
+
+            document.getElementById("earlySupportText").textContent =
+                "ವಸತಿ ನಿಲಯದ ಸ್ವಂತ ಕಟ್ಟಡ ನಿರ್ಮಾಣವಾಗುವ ಮೊದಲು " +
+                "ಶ್ರೀಮತಿ ಜ್ಯೋತಿ ಬಾಲಕೃಷ್ಣ ಹಾಗೂ ಇತರ ದಾನಿಗಳು " +
+                "ಹಲವಾರು ವರ್ಷಗಳ ಕಾಲ ತಮ್ಮ ಮನೆಗಳಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಯರಿಗೆ " +
+                "ಉಚಿತ ವಸತಿ ವ್ಯವಸ್ಥೆ ಮಾಡಿದರು.";
+
+
+            document.getElementById("buildingTitle").textContent =
+                "2008 - ವಸತಿ ನಿಲಯದ ಕಟ್ಟಡ";
+
+
+            document.getElementById("buildingText").textContent =
+                "ದಾನಿಗಳ ಸಹಾಯದಿಂದ ಸುಮಾರು ₹1.5 ಕೋಟಿ ವೆಚ್ಚದಲ್ಲಿ " +
+                "ವಸತಿ ನಿಲಯದ ಕಟ್ಟಡವನ್ನು ನಿರ್ಮಿಸಿ 2008ರಲ್ಲಿ " +
+                "ಉದ್ಘಾಟಿಸಲಾಯಿತು.";
+
+
+            document.getElementById("expansionTitle").textContent =
+                "2023 - ಮೂರನೇ ಮಹಡಿ ವಿಸ್ತರಣೆ";
+
+
+            document.getElementById("expansionText").textContent =
+                "ಹೆಚ್ಚುತ್ತಿರುವ ಬೇಡಿಕೆಯಿಂದಾಗಿ ಟ್ರಸ್ಟ್‌ನ ಉಳಿತಾಯ " +
+                "ಹಣವನ್ನು ಬಳಸಿ 2023ರ ಅಕ್ಟೋಬರ್‌ನಲ್ಲಿ ಹೆಚ್ಚುವರಿ " +
+                "ಮೂರನೇ ಮಹಡಿಯ ನಿರ್ಮಾಣವನ್ನು ಪ್ರಾರಂಭಿಸಲಾಯಿತು.";
+
+
+            document.getElementById("peopleTitle").textContent =
+                "ವಸತಿ ನಿಲಯಕ್ಕೆ ನೆರವು ನೀಡಿದವರು";
+
+
+            document.getElementById("peopleIntro").textContent =
+                "ವಸತಿ ನಿಲಯದ ಕಟ್ಟಡ ನಿರ್ಮಾಣವಾಗುವ ಮೊದಲು ಹಲವಾರು " +
+                "ದಾನಿಗಳು ವಿದ್ಯಾರ್ಥಿನಿಯರಿಗೆ ವಸತಿ ಮತ್ತು ಇತರ ನೆರವನ್ನು " +
+                "ನೀಡಿದರು.";
+
+
+            document.getElementById("capacityTitle").textContent =
+                "ವಸತಿ ನಿಲಯದ ಸಾಮರ್ಥ್ಯ";
+
+
+            document.getElementById("capacityText1").textContent =
+                "ವಸತಿ ನಿಲಯದಲ್ಲಿ 22 ಕೊಠಡಿಗಳಿದ್ದು, ಸುಮಾರು " +
+                "80-85 ವಿದ್ಯಾರ್ಥಿನಿಯರಿಗೆ ವಸತಿ ಕಲ್ಪಿಸಬಹುದು.";
+
+
+            document.getElementById("capacityText2").textContent =
+                "ಇಲ್ಲಿಯವರೆಗೆ 2,000ಕ್ಕೂ ಹೆಚ್ಚು ವಿದ್ಯಾರ್ಥಿನಿಯರು " +
+                "ಈ ವಸತಿ ನಿಲಯದ ಪ್ರಯೋಜನ ಪಡೆದಿದ್ದಾರೆ. " +
+                "ಇವರಲ್ಲಿ ಕುಂಚಿಟಿಗರ ಸಮುದಾಯದ ವಿದ್ಯಾರ್ಥಿನಿಯರ ಜೊತೆಗೆ " +
+                "ಇತರ ಸಮುದಾಯಗಳ ವಿದ್ಯಾರ್ಥಿನಿಯರೂ ಸೇರಿದ್ದಾರೆ.";
+
+
+            document.getElementById("facilitiesTitle").textContent =
+                "ಸೌಲಭ್ಯಗಳು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿನಿಯರ ನೆರವು";
+
+
+            document.getElementById("facilitiesIntro").textContent =
+                "ಬೆಂಗಳೂರಿನಲ್ಲಿ ವಿದ್ಯಾರ್ಥಿನಿಯರು ತಮ್ಮ ಶಿಕ್ಷಣವನ್ನು " +
+                "ಮುಂದುವರಿಸಲು ಅಗತ್ಯವಾದ ಮೂಲಭೂತ ಸೌಲಭ್ಯ ಮತ್ತು " +
+                "ಬೆಂಬಲವನ್ನು ವಸತಿ ನಿಲಯ ಒದಗಿಸುತ್ತದೆ.";
+
+
+            document.getElementById("facility1").textContent =
+                "ವಸತಿ ಸೌಲಭ್ಯ";
+
+
+            document.getElementById("facility2").textContent =
+                "ಸ್ವಚ್ಛ ಮತ್ತು ಆರೋಗ್ಯಕರ ಆಹಾರ";
+
+
+            document.getElementById("facility3").textContent =
+                "ಕುಡಿಯುವ ನೀರು";
+
+
+            document.getElementById("facility4").textContent =
+                "24 ಗಂಟೆಗಳ ಬಿಸಿನೀರಿನ ಸೌಲಭ್ಯ";
+
+
+            document.getElementById("facility5").textContent =
+                "ಕಂಪ್ಯೂಟರ್ ಪ್ರಯೋಗಾಲಯದ ಸೌಲಭ್ಯ";
+
+
+            document.getElementById("facility6").textContent =
+                "ಉನ್ನತ ಶಿಕ್ಷಣಕ್ಕೆ ಬೆಂಬಲ";
+
+
+            document.getElementById("costText").textContent =
+                "ವಸತಿ ನಿಲಯವು ಲಾಭರಹಿತ ಉದ್ದೇಶದಿಂದ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. " +
+                "ಆಹಾರ, ವಿದ್ಯುತ್, ನೀರು ಮತ್ತು ಸಿಬ್ಬಂದಿಗೆ ಸಂಬಂಧಿಸಿದ " +
+                "ವೆಚ್ಚಗಳಂತಹ ವಾಸ್ತವಿಕ ಖರ್ಚುಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿನಿಯರು " +
+                "ಕೊಡುಗೆ ನೀಡುತ್ತಾರೆ.";
+
+
+            document.getElementById("expansionSectionTitle").textContent =
+                "ಮೂರನೇ ಮಹಡಿ ವಿಸ್ತರಣೆ";
+
+
+            document.getElementById("expansionSectionText").textContent =
+                "ವಸತಿಗಾಗಿ ಹೆಚ್ಚುತ್ತಿರುವ ಬೇಡಿಕೆಯಿಂದಾಗಿ ಟ್ರಸ್ಟ್ " +
+                "2023ರಲ್ಲಿ ಮೂರನೇ ಮಹಡಿಯಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಕೊಠಡಿಗಳ " +
+                "ನಿರ್ಮಾಣವನ್ನು ಪ್ರಾರಂಭಿಸಿತು.";
+
+
+            document.getElementById("expansionPurpose").textContent =
+                "ಹೆಚ್ಚುವರಿ ಕೊಠಡಿಗಳು ವೈದ್ಯಕೀಯ, ಎಂಜಿನಿಯರಿಂಗ್, " +
+                "ಸ್ಪರ್ಧಾತ್ಮಕ ಪರೀಕ್ಷೆಗಳು ಮತ್ತು ಇತರ ಉನ್ನತ ಶಿಕ್ಷಣ " +
+                "ಪಡೆಯುತ್ತಿರುವ ಹೆಣ್ಣುಮಕ್ಕಳಿಗೆ ನೆರವಾಗಲು ಉದ್ದೇಶಿಸಲಾಗಿದೆ.";
+
+
+            document.getElementById("appealTitle").textContent =
+                "ನೆರವು ನೀಡಲು ಮನವಿ";
+
+
+            document.getElementById("appealText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರಿಗಾಗಿ ಹೆಚ್ಚುವರಿ ಕೊಠಡಿಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು " +
+                "ಸಂಸ್ಥೆಯು ಉದಾರ ದಾನಿಗಳಿಂದ ಆರ್ಥಿಕ ಮತ್ತು ನಿರ್ಮಾಣ " +
+                "ಸಾಮಗ್ರಿಗಳ ಸಹಾಯವನ್ನು ಕೋರುತ್ತದೆ.";
+
+
+            document.getElementById("sponsorshipTitle").textContent =
+                "ಕೊಠಡಿ ಪ್ರಾಯೋಜಕತ್ವ";
+
+
+            document.getElementById("sponsorshipAmount").textContent =
+                "ಪ್ರತಿ ಕೊಠಡಿಗೆ ₹5,00,000 (5 ಲಕ್ಷ)";
+
+
+            document.getElementById("sponsorshipText").textContent =
+                "ದಾನಿಗಳು ಒಂದು ಸಂಪೂರ್ಣ ಕೊಠಡಿಯನ್ನು ಪ್ರಾಯೋಜಿಸಬಹುದು. " +
+                "ಪ್ರಾಯೋಜಿತ ಕೊಠಡಿಯ ಹೊರಭಾಗದಲ್ಲಿ ದಾನಿಯ ಹೆಸರು ಮತ್ತು " +
+                "ಛಾಯಾಚಿತ್ರವನ್ನು ಪ್ರದರ್ಶಿಸಬಹುದು.";
+
+
+            document.getElementById("bankTitle").textContent =
+                "ದಾನಕ್ಕಾಗಿ ಬ್ಯಾಂಕ್ ವಿವರಗಳು";
+
+
+            document.getElementById("accountNameLabel").textContent =
+                "ಖಾತೆಯ ಹೆಸರು:";
+
+
+            document.getElementById("bankNameLabel").textContent =
+                "ಬ್ಯಾಂಕ್:";
+
+
+            document.getElementById("accountNumberLabel").textContent =
+                "ಚಾಲ್ತಿ ಖಾತೆ ಸಂಖ್ಯೆ:";
+
+
+            document.getElementById("ifscLabel").textContent =
+                "IFSC ಕೋಡ್:";
+
+
+            document.getElementById("panLabel").textContent =
+                "PAN:";
+
+
+            document.getElementById("contactTitle").textContent =
+                "ಸಂಪರ್ಕ";
+
+
+            document.getElementById("contactText").textContent =
+                "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಮತ್ತು ನೆರವಿಗಾಗಿ ವಸತಿ ನಿಲಯದ " +
+                "ಸಂಸ್ಥೆಯನ್ನು ಸಂಪರ್ಕಿಸಿ.";
+
+
+            document.getElementById("backButton").textContent =
+                "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Vagdevi Ladies Hostel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f4ff, #fff7fb);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        /* Main area */
+        .container {
+            width: 90%;
+            max-width: 750px;
+            margin: 50px auto;
+        }
+
+        /* ONE CONTACT BOX */
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid #eeeeee;
+        }
+
+        .contact-section {
+            margin-bottom: 30px;
+        }
+
+        .contact-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-section h2 {
+            color: #6a1b9a;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact-section a {
+            color: #6a1b9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: block;
+            width: 230px;
+            margin: 35px auto 20px;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .header p {
+                font-size: 18px;
+            }
+
+            .container {
+                width: 92%;
+                margin: 30px auto;
+            }
+
+            .contact-box {
+                padding: 25px 20px;
+            }
+
+            .contact-section h2 {
+                font-size: 19px;
+            }
+
+            .contact-section p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <h1>Vagdevi Ladies Hostel</h1>
+
+        <p id="contactHeading">
+            Contact Us
+        </p>
+
+    </div>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- ONE SINGLE BOX -->
+        <div class="contact-box">
+
+
+            <!-- ADDRESS -->
+            <div class="contact-section">
+
+                <h2 id="addressTitle">
+                    📍 Address
+                </h2>
+
+                <p id="addressText">
+                    No. 14/10, Near Sollapuradammana Temple,<br>
+                    Magadi Road, Sunkadakatte,<br>
+                    Hegganahalli, Bengaluru – 560091
+                </p>
+
+            </div>
+
+
+            <!-- PHONE NUMBERS -->
+            <div class="contact-section">
+
+                <h2 id="phoneTitle">
+                    📞 Phone Numbers
+                </h2>
+
+                <p>
+                    <span id="chairpersonLabel">Chairperson:</span>
+                    <a href="tel:9448687451">
+                        9448687451
+                    </a>
+                    <br>
+
+                    <span id="secretaryLabel">Secretary:</span>
+                    <a href="tel:9845194883">
+                        9845194883
+                    </a>
+                    <br>
+
+                    <span id="hostelLabel">Hostel:</span>
+                    <a href="tel:9731302039">
+                        9731302039
+                    </a>
+                    /
+                    <a href="tel:8310876176">
+                        8310876176
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="contact-section">
+
+                <h2 id="emailTitle">
+                    ✉️ Email
+                </h2>
+
+                <p>
+                    <a href="mailto:vagdevividhyarthininilaya@gmail.com">
+                        vagdevividhyarthininilaya@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BACK TO DASHBOARD -->
+        <a href="dashboard.html"
+           class="back-button"
+           id="backButton">
+
+            ← Back to Dashboard
+
+        </a>
+
+    </div>
+
+
+    <!-- LANGUAGE SCRIPT -->
+    <script>
+
+        // Get selected language from dashboard
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
+
+
+        // ==========================
+        // KANNADA
+        // ==========================
+
+        if (selectedLanguage === "Kannada") {
+
+            // Heading
+            document.getElementById("contactHeading").textContent =
+                "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ";
+
+
+            // Address
+            document.getElementById("addressTitle").textContent =
+                "📍 ವಿಳಾಸ";
+
+            document.getElementById("addressText").innerHTML =
+                "ನಂ. 14/10, ಸೊಲ್ಲಾಪುರದಮ್ಮನ ದೇವಸ್ಥಾನದ ಹತ್ತಿರ,<br>" +
+                "ಮಾಗಡಿ ರಸ್ತೆ, ಸುಂಕದಕಟ್ಟೆ,<br>" +
+                "ಹೆಗ್ಗನಹಳ್ಳಿ, ಬೆಂಗಳೂರು – 560091";
+
+
+            // Phone
+            document.getElementById("phoneTitle").textContent =
+                "📞 ದೂರವಾಣಿ ಸಂಖ್ಯೆಗಳು";
+
+
+            document.getElementById("chairpersonLabel").textContent =
+                "ಅಧ್ಯಕ್ಷರು: ";
+
+            document.getElementById("secretaryLabel").textContent =
+                "ಕಾರ್ಯದರ್ಶಿ: ";
+
+            document.getElementById("hostelLabel").textContent =
+                "ಹಾಸ್ಟೆಲ್: ";
+
+
+            // Email
+            document.getElementById("emailTitle").textContent =
+                "✉️ ಇಮೇಲ್";
+
+
+            // Back button
+            document.getElementById("backButton").textContent =
+                "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

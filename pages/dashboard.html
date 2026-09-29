@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Vagdevi Ladies Hostel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)),
+                url("../images/hostel.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            padding: 30px 20px;
+        }
+
+        .dashboard {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .welcome-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .welcome-box h2 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .welcome-box p {
+            color: #666;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card h3 {
+            margin-bottom: 10px;
+            color: #7b1fa2;
+        }
+
+        .menu-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .back-button {
+            display: block;
+            width: 150px;
+            margin: 30px auto 0;
+
+            padding: 12px;
+
+            background: white;
+            color: #7b1fa2;
+
+            text-align: center;
+            text-decoration: none;
+
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="header">
+            <h1>Vagdevi Ladies Hostel</h1>
+            <p id="dashboardTitle">Visitor Dashboard</p>
+        </div>
+
+        <div class="welcome-box">
+            <h2 id="welcomeTitle">Welcome!</h2>
+            <p id="welcomeText">
+                Welcome to Vagdevi Ladies Hostel
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <a href="about-hostel.html" class="menu-card">
+                <h3 id="aboutHostel">About Hostel</h3>
+                <p id="aboutHostelText">
+                    Learn more about our hostel.
+                </p>
+            </a>
+
+            <a href="trustees.html" class="menu-card">
+                <h3 id="aboutTrustees">About Trustees</h3>
+                <p id="aboutTrusteesText">
+                    View trustee information.
+                </p>
+            </a>
+
+            <a href="facilities.html" class="menu-card">
+                <h3 id="facilities">Facilities</h3>
+                <p id="facilitiesText">
+                    Explore the facilities available.
+                </p>
+            </a>
+
+            <a href="rules.html" class="menu-card">
+                <h3 id="rules">Rules & Regulations</h3>
+                <p id="rulesText">
+                    View hostel rules and regulations.
+                </p>
+            </a>
+
+            <a href="gallery.html" class="menu-card">
+                <h3 id="gallery">Gallery</h3>
+                <p id="galleryText">
+                    View hostel photos.
+                </p>
+            </a>
+
+            <a href="contact.html" class="menu-card">
+                <h3 id="contact">Contact</h3>
+                <p id="contactText">
+                    Get hostel contact details.
+                </p>
+            </a>
+
+        </div>
+
+        <a href="registration.html"
+           class="back-button"
+           id="backButton">
+            ← Back
+        </a>
+
+    </div>
+
+
+    <!-- LANGUAGE SCRIPT -->
+
+    <script>
+
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
+
+
+        if (selectedLanguage === "Kannada") {
+
+            document.getElementById("dashboardTitle").textContent =
+                "ಭೇಟಿದಾರರ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್";
+
+            document.getElementById("welcomeTitle").textContent =
+                "ಸ್ವಾಗತ!";
+
+            document.getElementById("welcomeText").textContent =
+                "ವಾಗ್ದೇವಿ ಮಹಿಳಾ ವಸತಿ ನಿಲಯಕ್ಕೆ ಸ್ವಾಗತ";
+
+
+            document.getElementById("aboutHostel").textContent =
+                "ವಸತಿ ನಿಲಯದ ಬಗ್ಗೆ";
+
+            document.getElementById("aboutHostelText").textContent =
+                "ನಮ್ಮ ವಸತಿ ನಿಲಯದ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.";
+
+
+            document.getElementById("aboutTrustees").textContent =
+                "ಟ್ರಸ್ಟಿಗಳ ಬಗ್ಗೆ";
+
+            document.getElementById("aboutTrusteesText").textContent =
+                "ಟ್ರಸ್ಟಿಗಳ ಮಾಹಿತಿಯನ್ನು ವೀಕ್ಷಿಸಿ.";
+
+
+            document.getElementById("facilities").textContent =
+                "ಸೌಲಭ್ಯಗಳು";
+
+            document.getElementById("facilitiesText").textContent =
+                "ಲಭ್ಯವಿರುವ ಸೌಲಭ್ಯಗಳನ್ನು ವೀಕ್ಷಿಸಿ.";
+
+
+            document.getElementById("rules").textContent =
+                "ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು";
+
+            document.getElementById("rulesText").textContent =
+                "ವಸತಿ ನಿಲಯದ ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ.";
+
+
+            document.getElementById("gallery").textContent =
+                "ಚಿತ್ರ ಗ್ಯಾಲರಿ";
+
+            document.getElementById("galleryText").textContent =
+                "ವಸತಿ ನಿಲಯದ ಚಿತ್ರಗಳನ್ನು ವೀಕ್ಷಿಸಿ.";
+
+
+            document.getElementById("contact").textContent =
+                "ಸಂಪರ್ಕ";
+
+            document.getElementById("contactText").textContent =
+                "ವಸತಿ ನಿಲಯದ ಸಂಪರ್ಕ ವಿವರಗಳನ್ನು ಪಡೆಯಿರಿ.";
+
+
+            document.getElementById("backButton").textContent =
+                "← ಹಿಂದೆ";
+        }
+
+    </script>
+
+</body>
+
+</html>

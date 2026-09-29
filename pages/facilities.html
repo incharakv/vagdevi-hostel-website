@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facilities - Vagdevi Ladies Hostel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8f4ff, #fff7fb);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: 40px auto;
+        }
+
+        /* Facilities Grid */
+        .facilities {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* Facility Card */
+        .facility-card {
+            background: white;
+            padding: 28px 22px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Icons */
+        .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        /* Card Heading */
+        .facility-card h2 {
+            color: #6a1b9a;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        /* Card Text */
+        .facility-card p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: block;
+            width: 230px;
+            margin: 40px auto 20px;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tablet */
+        @media (max-width: 850px) {
+
+            .facilities {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 550px) {
+
+            .container {
+                width: 92%;
+                margin: 25px auto;
+            }
+
+            .facilities {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .header {
+                padding: 25px 10px;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+
+            .header p {
+                font-size: 18px;
+            }
+
+            .facility-card {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+
+        <h1>Vagdevi Ladies Hostel</h1>
+
+        <p id="facilitiesHeading">
+            Our Facilities
+        </p>
+
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="facilities">
+
+
+            <!-- 1. Rooms -->
+            <div class="facility-card">
+
+                <div class="icon">🛏️</div>
+
+                <h2 id="roomsTitle">
+                    Spacious & Comfortable Rooms
+                </h2>
+
+                <p id="roomsText">
+                    Well-maintained and comfortable rooms that provide
+                    students with a peaceful environment for living and studying.
+                </p>
+
+            </div>
+
+
+            <!-- 2. Wi-Fi -->
+            <div class="facility-card">
+
+                <div class="icon">📶</div>
+
+                <h2 id="wifiTitle">
+                    24/7 High-Speed Wi-Fi
+                </h2>
+
+                <p id="wifiText">
+                    High-speed Wi-Fi is available throughout the hostel
+                    to support students in their studies and online activities.
+                </p>
+
+            </div>
+
+
+            <!-- 3. Hot Water -->
+            <div class="facility-card">
+
+                <div class="icon">🚿</div>
+
+                <h2 id="hotWaterTitle">
+                    24/7 Hot Water
+                </h2>
+
+                <p id="hotWaterText">
+                    Hot water facility is available 24/7 for the
+                    convenience and comfort of our students.
+                </p>
+
+            </div>
+
+
+            <!-- 4. Computer Lab -->
+            <div class="facility-card">
+
+                <div class="icon">💻</div>
+
+                <h2 id="computerTitle">
+                    Computer Lab
+                </h2>
+
+                <p id="computerText">
+                    A well-equipped computer lab is available to help
+                    students with their academic and learning needs.
+                </p>
+
+            </div>
+
+
+            <!-- 5. Security -->
+            <div class="facility-card">
+
+                <div class="icon">🛡️</div>
+
+                <h2 id="securityTitle">
+                    24/7 Security
+                </h2>
+
+                <p id="securityText">
+                    Round-the-clock security arrangements help provide
+                    students with a safe and secure living environment.
+                </p>
+
+            </div>
+
+
+            <!-- 6. Food -->
+            <div class="facility-card">
+
+                <div class="icon">🍚</div>
+
+                <h2 id="foodTitle">
+                    Daily Food Facility
+                </h2>
+
+                <p id="foodText">
+                    Nutritious and hygienic food is provided daily,
+                    keeping the well-being of students in mind.
+                </p>
+
+            </div>
+
+
+            <!-- 7. Sports -->
+            <div class="facility-card">
+
+                <div class="icon">🏸</div>
+
+                <h2 id="sportsTitle">
+                    Sports Facilities & Support
+                </h2>
+
+                <p id="sportsText">
+                    Sports facilities and support are provided to encourage
+                    students to participate in physical activities and sports.
+                </p>
+
+            </div>
+
+
+            <!-- 8. Transportation -->
+            <div class="facility-card">
+
+                <div class="icon">🚌</div>
+
+                <h2 id="transportTitle">
+                    Convenient Transportation
+                </h2>
+
+                <p id="transportText">
+                    The hostel has convenient access to public transportation,
+                    making travel easier for students.
+                </p>
+
+            </div>
+
+
+            <!-- 9. Clean Environment -->
+            <div class="facility-card">
+
+                <div class="icon">🧹</div>
+
+                <h2 id="cleanTitle">
+                    Clean & Hygienic Environment
+                </h2>
+
+                <p id="cleanText">
+                    Regular cleaning and proper maintenance help provide
+                    students with a clean, hygienic, and comfortable environment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Back to Dashboard -->
+        <a href="dashboard.html"
+           class="back-button"
+           id="backButton">
+
+            ← Back to Dashboard
+
+        </a>
+
+    </div>
+
+
+    <!-- LANGUAGE SCRIPT -->
+    <script>
+
+        // Get the language selected on the dashboard
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
+
+
+        // ==============================
+        // KANNADA LANGUAGE
+        // ==============================
+
+        if (selectedLanguage === "Kannada") {
+
+
+            document.getElementById("facilitiesHeading").textContent =
+                "ನಮ್ಮ ಸೌಲಭ್ಯಗಳು";
+
+
+            document.getElementById("roomsTitle").textContent =
+                "ವಿಶಾಲ ಮತ್ತು ಆರಾಮದಾಯಕ ಕೊಠಡಿಗಳು";
+
+            document.getElementById("roomsText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳ ವಾಸ್ತವ್ಯ ಮತ್ತು ಅಧ್ಯಯನಕ್ಕೆ ಅನುಕೂಲವಾಗುವಂತೆ ಉತ್ತಮವಾಗಿ ನಿರ್ವಹಿಸಲಾದ ಆರಾಮದಾಯಕ ಕೊಠಡಿಗಳು.";
+
+
+            document.getElementById("wifiTitle").textContent =
+                "24/7 ಹೈ-ಸ್ಪೀಡ್ ವೈ-ಫೈ";
+
+            document.getElementById("wifiText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳ ಅಧ್ಯಯನ ಮತ್ತು ಆನ್‌ಲೈನ್ ಚಟುವಟಿಕೆಗಳಿಗೆ ಅನುಕೂಲವಾಗುವಂತೆ ಹಾಸ್ಟೆಲ್‌ನಲ್ಲಿ 24/7 ಹೈ-ಸ್ಪೀಡ್ ವೈ-ಫೈ ಸೌಲಭ್ಯವಿದೆ.";
+
+
+            document.getElementById("hotWaterTitle").textContent =
+                "24/7 ಬಿಸಿ ನೀರಿನ ಸೌಲಭ್ಯ";
+
+            document.getElementById("hotWaterText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳ ಅನುಕೂಲ ಮತ್ತು ಆರಾಮಕ್ಕಾಗಿ 24/7 ಬಿಸಿ ನೀರಿನ ಸೌಲಭ್ಯವನ್ನು ಒದಗಿಸಲಾಗಿದೆ.";
+
+
+            document.getElementById("computerTitle").textContent =
+                "ಕಂಪ್ಯೂಟರ್ ಲ್ಯಾಬ್";
+
+            document.getElementById("computerText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳ ಶೈಕ್ಷಣಿಕ ಮತ್ತು ಕಲಿಕಾ ಅಗತ್ಯಗಳಿಗೆ ಸಹಾಯವಾಗುವಂತೆ ಸುಸಜ್ಜಿತ ಕಂಪ್ಯೂಟರ್ ಲ್ಯಾಬ್ ಲಭ್ಯವಿದೆ.";
+
+
+            document.getElementById("securityTitle").textContent =
+                "24/7 ಭದ್ರತಾ ವ್ಯವಸ್ಥೆ";
+
+            document.getElementById("securityText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸುರಕ್ಷಿತ ಮತ್ತು ಭದ್ರವಾದ ವಾತಾವರಣವನ್ನು ಒದಗಿಸಲು 24/7 ಭದ್ರತಾ ವ್ಯವಸ್ಥೆಯನ್ನು ಹೊಂದಲಾಗಿದೆ.";
+
+
+            document.getElementById("foodTitle").textContent =
+                "ದೈನಂದಿನ ಆಹಾರ ಸೌಲಭ್ಯ";
+
+            document.getElementById("foodText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳ ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ಪ್ರತಿದಿನ ಪೌಷ್ಟಿಕ ಮತ್ತು ಸ್ವಚ್ಛವಾದ ಆಹಾರವನ್ನು ಒದಗಿಸಲಾಗುತ್ತದೆ.";
+
+
+            document.getElementById("sportsTitle").textContent =
+                "ಕ್ರೀಡಾ ಸೌಲಭ್ಯ ಮತ್ತು ಪ್ರೋತ್ಸಾಹ";
+
+            document.getElementById("sportsText").textContent =
+                "ವಿದ್ಯಾರ್ಥಿಗಳು ದೈಹಿಕ ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ಕ್ರೀಡೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಲು ಪ್ರೋತ್ಸಾಹಿಸುವ ಸಲುವಾಗಿ ಕ್ರೀಡಾ ಸೌಲಭ್ಯ ಮತ್ತು ಬೆಂಬಲವನ್ನು ಒದಗಿಸಲಾಗುತ್ತದೆ.";
+
+
+            document.getElementById("transportTitle").textContent =
+                "ಅನುಕೂಲಕರ ಸಾರಿಗೆ ವ್ಯವಸ್ಥೆ";
+
+            document.getElementById("transportText").textContent =
+                "ಹಾಸ್ಟೆಲ್ ಸಮೀಪದಲ್ಲೇ ಸಾರ್ವಜನಿಕ ಸಾರಿಗೆ ಸೌಲಭ್ಯವಿದ್ದು, ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ನಗರದ ವಿವಿಧ ಭಾಗಗಳಿಗೆ ಪ್ರಯಾಣಿಸಲು ಅನುಕೂಲವಾಗಿದೆ.";
+
+
+            document.getElementById("cleanTitle").textContent =
+                "ಸ್ವಚ್ಛ ಮತ್ತು ನೈರ್ಮಲ್ಯಯುತ ಪರಿಸರ";
+
+            document.getElementById("cleanText").textContent =
+                "ನಿಯಮಿತ ಸ್ವಚ್ಛತೆ ಮತ್ತು ಸರಿಯಾದ ನಿರ್ವಹಣೆಯ ಮೂಲಕ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸ್ವಚ್ಛ, ನೈರ್ಮಲ್ಯಯುತ ಮತ್ತು ಆರಾಮದಾಯಕ ವಾತಾವರಣವನ್ನು ಒದಗಿಸಲಾಗುತ್ತದೆ.";
+
+
+            document.getElementById("backButton").textContent =
+                "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

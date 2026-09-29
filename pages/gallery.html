@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery - Vagdevi Ladies Hostel</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ),
+            url("../images/hostel.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 100vh;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #4b2e83;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            color: #333;
+            font-size: 23px;
+        }
+
+        .header p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            background: #f5f5f5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #4b2e83;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-button:hover {
+            background: #36215f;
+        }
+
+        @media (max-width: 800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+        /* PHOTO VIEWER */
+.photo-viewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-viewer img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button */
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Previous and Next buttons */
+.prev-photo,
+.next-photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    user-select: none;
+}
+
+.prev-photo {
+    left: 20px;
+}
+
+.next-photo {
+    right: 20px;
+}
+
+.prev-photo:hover,
+.next-photo:hover,
+.close-viewer:hover {
+    opacity: 0.7;
+}
+
+/* Make gallery photos clickable */
+.gallery-item img {
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Vagdevi Ladies Hostel</h1>
+
+            <h2 id="pageTitle">
+                Hostel Gallery
+            </h2>
+
+            <p id="galleryIntro">
+                A glimpse of our hostel, facilities and activities.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="../images/galler1.jpg" alt="Vagdevi Ladies Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery2.jpg" alt="Hostel Building">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery3.jpg" alt="Hostel Facilities">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery4.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery5.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery6.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery7.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery8.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery9.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery10.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery11.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery12.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery13.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery14.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery15.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery16.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery17.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery18.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery19.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery20.jpg" alt="Hostel">
+            </div>
+
+            <div class="gallery-item">
+                <img src="../images/gallery21.jpg" alt="Hostel">
+            </div>
+
+           
+             <div class="gallery-item">
+                <img src="../images/gallery22.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery23.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery24.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery25.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery26.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery27.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery28.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery29.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery30.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery31.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery32.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery33.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery34.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery35.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery36.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery37.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery38.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery39.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery40.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery41.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery42.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery43.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery44.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery45.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery46.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery47.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery48.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery49.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery50.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery51.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery52.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery53.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery54.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery55.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery56.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery57.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery58.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery59.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery60.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery61.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery62.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery63.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery64.jpg" alt="Hostel">
+            </div>
+
+             <div class="gallery-item">
+                <img src="../images/gallery65.jpg" alt="Hostel">
+            </div>
+            </div>
+
+<!-- PHOTO VIEWER -->
+<div id="photoViewer" class="photo-viewer">
+
+    <!-- Close Button -->
+    <span class="close-viewer" id="closeViewer">&times;</span>
+
+    <!-- Previous Button -->
+    <span class="prev-photo" id="prevPhoto">&#10094;</span>
+
+    <!-- Large Photo -->
+    <img id="viewerImage" src="" alt="Selected Photo">
+
+    <!-- Next Button -->
+    <span class="next-photo" id="nextPhoto">&#10095;</span>
+
+</div>
+
+<a href="dashboard.html" class="back-button" id="backButton">
+    ← Back to Dashboard
+</a>
+
+    </div>
+
+    <script>
+
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
+
+        if (selectedLanguage === "Kannada") {
+
+            document.documentElement.lang = "kn";
+
+            document.getElementById("pageTitle").innerText =
+                "ವಸತಿ ನಿಲಯದ ಚಿತ್ರ ಗ್ಯಾಲರಿ";
+
+            document.getElementById("galleryIntro").innerText =
+                "ನಮ್ಮ ವಸತಿ ನಿಲಯ, ಸೌಲಭ್ಯಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳ ಕೆಲವು ಚಿತ್ರಗಳು.";
+
+            document.getElementById("backButton").innerText =
+                "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂದೆ";
+        }
+
+        // PHOTO VIEWER
+
+const photos = document.querySelectorAll(".gallery-item img");
+const photoViewer = document.getElementById("photoViewer");
+const viewerImage = document.getElementById("viewerImage");
+const closeViewer = document.getElementById("closeViewer");
+const prevPhoto = document.getElementById("prevPhoto");
+const nextPhoto = document.getElementById("nextPhoto");
+
+let currentPhoto = 0;
+
+// Open photo
+photos.forEach((photo, index) => {
+    photo.addEventListener("click", function () {
+        currentPhoto = index;
+        viewerImage.src = photo.src;
+        photoViewer.style.display = "flex";
+    });
+});
+
+// Show previous photo
+prevPhoto.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    currentPhoto--;
+
+    if (currentPhoto < 0) {
+        currentPhoto = photos.length - 1;
+    }
+
+    viewerImage.src = photos[currentPhoto].src;
+});
+
+// Show next photo
+nextPhoto.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    currentPhoto++;
+
+    if (currentPhoto >= photos.length) {
+        currentPhoto = 0;
+    }
+
+    viewerImage.src = photos[currentPhoto].src;
+});
+
+// Close viewer
+closeViewer.addEventListener("click", function () {
+    photoViewer.style.display = "none";
+});
+
+// Close when clicking outside the photo
+photoViewer.addEventListener("click", function (event) {
+    if (event.target === photoViewer) {
+        photoViewer.style.display = "none";
+    }
+});
+
+// Keyboard controls
+document.addEventListener("keydown", function (event) {
+
+    if (photoViewer.style.display !== "flex") {
+        return;
+    }
+
+    if (event.key === "ArrowLeft") {
+        prevPhoto.click();
+    }
+
+    if (event.key === "ArrowRight") {
+        nextPhoto.click();
+    }
+
+    if (event.key === "Escape") {
+        closeViewer.click();
+    }
+});
+
+    </script>
+
+</body>
+</html>
