@@ -1,10 +1,12 @@
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '.env'),debug: true });
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const path = require("path");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // ===============================
 // Middleware
@@ -35,8 +37,7 @@ app.get("/", (req, res) => {
 // MongoDB Connection
 // ===============================
 
-mongoose
-    .connect("mongodb://127.0.0.1:27017/vagdevi_hostel")
+    mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("MongoDB connected successfully");
     })
