@@ -13,71 +13,115 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f7fb;
-            color: #222;
+            padding: 25px 12px;
+            font-family: Arial, "Noto Sans Kannada", sans-serif;
+            background: #eeeeee;
+            color: #111;
         }
 
-        .page {
-            max-width: 1200px;
+        /* Main document */
+        .document {
+            max-width: 1050px;
             margin: auto;
-            padding: 40px 25px 60px;
+            background: #fff;
+            border: 3px solid #222;
+            padding: 25px 35px 35px;
         }
 
-        h1 {
+        /* Main heading */
+        .main-heading {
             text-align: center;
-            margin-bottom: 10px;
-            font-size: 34px;
-            color: #4b2e83;
-        }
-
-        .subtitle {
-            text-align: center;
-            margin-bottom: 45px;
-            color: #666;
-            font-size: 17px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 25px;
-            color: #7b3f98;
-            margin: 40px 0 25px;
+            color: #8b3030;
+            font-size: 30px;
             font-weight: bold;
+            margin: 5px 0 8px;
         }
 
-        .trustee-list {
-            max-width: 950px;
-            margin: auto;
-        }
-
-        .trustee {
+        .sub-heading {
             text-align: center;
-            margin-bottom: 28px;
+            color: #8b3030;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 25px;
         }
 
-        /* Kannada names are bold */
-        .kannada-name {
+        /* Section heading */
+        .section-heading {
+            text-align: center;
+            color: #8b3030;
             font-size: 23px;
             font-weight: bold;
-            line-height: 1.6;
+            text-decoration: underline;
+            margin: 20px 0 15px;
+        }
+
+        /* Each numbered person */
+        .person {
+            display: grid;
+            grid-template-columns: 55px 1fr;
+            border-bottom: 1px solid transparent;
+            margin-bottom: 10px;
+        }
+
+        .number {
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 7px;
+        }
+
+        .person-content {
+            text-align: center;
+        }
+
+        /* Red designation */
+        .designation {
+            color: #8b3030;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 0 0 5px;
+        }
+
+        /* Kannada name */
+        .kannada-name {
+            font-size: 29px;
+            font-weight: bold;
+            line-height: 1.35;
             margin: 0;
         }
 
-        /* English names are normal */
+        /* English name */
         .english-name {
             font-size: 16px;
             font-weight: normal;
-            color: #555;
             margin: 3px 0 0;
+            color: #222;
         }
 
+        /* Small additional information from the document */
+        .details {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 4px 0 0;
+            line-height: 1.5;
+        }
+
+        /* Additional trustees heading */
+        .additional-heading {
+            text-align: center;
+            color: #8b3030;
+            font-size: 23px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 28px 0 20px;
+        }
+
+        /* Bottom two-column section */
         .additional-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px 70px;
-            max-width: 1000px;
-            margin: auto;
+            gap: 18px 45px;
+            border-top: 0;
         }
 
         .additional-member {
@@ -85,57 +129,87 @@
         }
 
         .additional-member .kannada-name {
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 22px;
         }
 
         .additional-member .english-name {
             font-size: 15px;
-            font-weight: normal;
         }
 
+        /* Back button */
         .back-button {
             display: block;
             width: fit-content;
-            margin: 50px auto 0;
-            padding: 12px 25px;
-            background: #4b2e83;
+            margin: 35px auto 5px;
+            padding: 11px 25px;
+            background: #303f9f;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
+            font-size: 15px;
             font-weight: bold;
-            transition: 0.2s;
         }
 
         .back-button:hover {
-            background: #372060;
+            background: #222f80;
         }
 
+        /* Mobile */
         @media (max-width: 700px) {
 
-            .page {
-                padding: 25px 15px 45px;
+            body {
+                padding: 10px 5px;
             }
 
-            h1 {
-                font-size: 27px;
+            .document {
+                padding: 20px 12px 25px;
+                border-width: 2px;
             }
 
-            .section-title {
-                font-size: 22px;
+            .main-heading {
+                font-size: 23px;
             }
 
-            .kannada-name {
+            .sub-heading {
+                font-size: 19px;
+            }
+
+            .section-heading,
+            .additional-heading {
                 font-size: 20px;
             }
 
+            .person {
+                grid-template-columns: 40px 1fr;
+            }
+
+            .number {
+                font-size: 18px;
+            }
+
+            .designation {
+                font-size: 17px;
+            }
+
+            .kannada-name {
+                font-size: 22px;
+            }
+
             .english-name {
-                font-size: 15px;
+                font-size: 14px;
+            }
+
+            .details {
+                font-size: 12px;
             }
 
             .additional-grid {
                 grid-template-columns: 1fr;
-                gap: 22px;
+                gap: 18px;
+            }
+
+            .additional-member .kannada-name {
+                font-size: 20px;
             }
         }
     </style>
@@ -143,174 +217,533 @@
 
 <body>
 
-<div class="page">
+<div class="document">
 
-    <h1 id="pageTitle">Trustees</h1>
+    <div class="main-heading" id="mainHeading">
+        Kunchitigara Sarvajanika Seva Datti (R.)
+    </div>
 
-    <p class="subtitle" id="pageSubtitle">
-        Kunchitigara Sarvajanika Seva Datti (R.) – Vagdevi Vidyarthini Nilaya
-    </p>
+    <div class="sub-heading" id="subHeading">
+        Vagdevi Vidyarthini Nilaya
+    </div>
 
-
-    <!-- ================= MAIN TRUSTEES ================= -->
-
-    <div class="section-title">
+    <div class="section-heading" id="committeeHeading">
         Trustees
     </div>
 
-    <div class="trustee-list">
 
-        <div class="trustee">
-            <p class="kannada-name">ಮೇಜರ್ ಶ್ರೀ ಸಿ. ಆರ್. ರಮೇಶ್</p>
-            <p class="english-name">Major Sri C. R. Ramesh</p>
-        </div>
+    <!-- 1 -->
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಜ್ಯೋತಿ ಬಾಲಕೃಷ್ಣ</p>
-            <p class="english-name">Smt. Jyothi Balakrishna</p>
-        </div>
+    <div class="person">
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಎಂ. ಶಕುಂತಲಮ್ಮ ರಮೇಶ್</p>
-            <p class="english-name">Smt. M. Shakuntalamma Ramesh</p>
-        </div>
+        <div class="number">1.</div>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ರಾಜೀವ್ ಬಿ. ಆರ್.</p>
-            <p class="english-name">Sri Rajeev B. R.</p>
-        </div>
+        <div class="person-content">
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಎನ್. ನರಸಿಂಹಯ್ಯ</p>
-            <p class="english-name">Sri N. Narasimhayya</p>
-        </div>
+            <div class="designation">
+                Chairman
+            </div>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಎಂ. ಎನ್. ರಂಗನಾಥ್ ಕುಮಾರ್</p>
-            <p class="english-name">Sri M. N. Ranganath Kumar</p>
-        </div>
+            <p class="kannada-name">
+                ಮೇಜರ್ ಶ್ರೀ ಸಿ. ಆರ್. ರಮೇಶ್
+            </p>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಆರ್. ನಾರಾಯಣಪ್ಪ</p>
-            <p class="english-name">Sri R. Narayanappa</p>
-        </div>
+            <p class="english-name">
+                Major Sri C. R. Ramesh
+            </p>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಕೆ. ಹನುಮಂತರಾಯಪ್ಪ</p>
-            <p class="english-name">Sri K. Hanumantharayappa</p>
         </div>
 
     </div>
 
 
-    <!-- ================= TRUSTEES ================= -->
+    <!-- 2 -->
 
-    <div class="section-title">
+    <div class="person">
+
+        <div class="number">2.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Secretary
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಜ್ಯೋತಿ ಬಾಲಕೃಷ್ಣ
+            </p>
+
+            <p class="english-name">
+                Smt. Jyothi Balakrishna
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3 -->
+
+    <div class="person">
+
+        <div class="number">3.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Founder Trustee and Vice President - 01
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಎಂ. ಶಕುಂತಲಮ್ಮ ರಮೇಶ್
+            </p>
+
+            <p class="english-name">
+                Smt. M. Shakuntalamma Ramesh
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 4 -->
+
+    <div class="person">
+
+        <div class="number">4.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Trust Founder and Vice President - 02
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ರಾಜೀವ್ ಬಿ. ಆರ್.
+            </p>
+
+            <p class="english-name">
+                Sri Rajeev B. R.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 5 -->
+
+    <div class="person">
+
+        <div class="number">5.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Treasurer
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಎನ್. ನರಸಿಂಹಯ್ಯ
+            </p>
+
+            <p class="english-name">
+                Sri N. Narasimhayya
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 6 -->
+
+    <div class="person">
+
+        <div class="number">6.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Secretary
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಎಂ. ಎನ್. ರಂಗನಾಥ್ ಕುಮಾರ್
+            </p>
+
+            <p class="english-name">
+                Sri M. N. Ranganath Kumar
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 7 -->
+
+    <div class="person">
+
+        <div class="number">7.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Joint Secretary
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಆರ್. ನಾರಾಯಣಪ್ಪ
+            </p>
+
+            <p class="english-name">
+                Sri R. Narayanappa
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 8 -->
+
+    <div class="person">
+
+        <div class="number">8.</div>
+
+        <div class="person-content">
+
+            <div class="designation">
+                Vice President
+            </div>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಕೆ. ಹನುಮಂತರಾಯಪ್ಪ
+            </p>
+
+            <p class="english-name">
+                Sri K. Hanumantharayappa
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRUSTEES -->
+
+    <div class="section-heading">
         Trustees
     </div>
 
-    <div class="trustee-list">
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಎಂ. ಚಿಕ್ಕಿರಪ್ಪ</p>
-            <p class="english-name">Sri M. Chikkirappa</p>
-        </div>
+    <!-- 9 -->
 
-        <div class="trustee">
-            <p class="kannada-name">ಪ್ರೊ. ಶ್ರೀ ಮಾಲಿ ಮುದ್ದಣ್ಣ</p>
-            <p class="english-name">Prof. Sri Mali Mudhanna</p>
-        </div>
+    <div class="person">
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಲೀಲಾ ಸೋಮಶೇಖರ್</p>
-            <p class="english-name">Smt. Leela Somshekar</p>
-        </div>
+        <div class="number">9.</div>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಎ. ಆರ್. ಪಾಪಣ್ಣ</p>
-            <p class="english-name">Sri A. R. Papanna</p>
-        </div>
+        <div class="person-content">
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಕಾರಿಗೌಡ</p>
-            <p class="english-name">Sri Kari Gowda</p>
-        </div>
+            <p class="kannada-name">
+                ಶ್ರೀ ಎಂ. ಚಿಕ್ಕಿರಪ್ಪ
+            </p>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಶೋಭಾ ಚಂದ್ರಶೇಖರ್</p>
-            <p class="english-name">Smt. Shobha Chandrashekar</p>
-        </div>
+            <p class="english-name">
+                Sri M. Chikkirappa
+            </p>
 
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಸುವರ್ಣ ಲಿಂಗರಾಜು</p>
-            <p class="english-name">Smt. Suvarna Lingaraju</p>
-        </div>
-
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀ ಹೆಚ್. ವಾಸು</p>
-            <p class="english-name">Sri H. Vasu</p>
-        </div>
-
-        <div class="trustee">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಪ್ರಮೋದಿನಿ ಕಿಶನ್</p>
-            <p class="english-name">Smt. Pramodini Kishan</p>
         </div>
 
     </div>
 
 
-    <!-- ================= ADDITIONAL TRUSTEES ================= -->
+    <!-- 10 -->
 
-    <div class="section-title">
+    <div class="person">
+
+        <div class="number">10.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಪ್ರೊ. ಶ್ರೀ ಮಾಲಿ ಮುದ್ದಣ್ಣ
+            </p>
+
+            <p class="english-name">
+                Prof. Sri Mali Mudhanna
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 11 -->
+
+    <div class="person">
+
+        <div class="number">11.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಲೀಲಾ ಸೋಮಶೇಖರ್
+            </p>
+
+            <p class="english-name">
+                Smt. Leela Somshekar
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 12 -->
+
+    <div class="person">
+
+        <div class="number">12.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಎ. ಆರ್. ಪಾಪಣ್ಣ
+            </p>
+
+            <p class="english-name">
+                Sri A. R. Papanna
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 13 -->
+
+    <div class="person">
+
+        <div class="number">13.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಕಾರಿಗೌಡ
+            </p>
+
+            <p class="english-name">
+                Sri Kari Gowda
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 14 -->
+
+    <div class="person">
+
+        <div class="number">14.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಶೋಭಾ ಚಂದ್ರಶೇಖರ್
+            </p>
+
+            <p class="english-name">
+                Smt. Shobha Chandrashekar
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 16 -->
+
+    <div class="person">
+
+        <div class="number">16.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಸುವರ್ಣ ಲಿಂಗರಾಜು
+            </p>
+
+            <p class="english-name">
+                Smt. Suvarna Lingaraju
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 17 -->
+
+    <div class="person">
+
+        <div class="number">17.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಹೆಚ್. ವಾಸು
+            </p>
+
+            <p class="english-name">
+                Sri H. Vasu
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 18 -->
+
+    <div class="person">
+
+        <div class="number">18.</div>
+
+        <div class="person-content">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಪ್ರಮೋದಿನಿ ಕಿಶನ್
+            </p>
+
+            <p class="english-name">
+                Smt. Pramodini Kishan
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADDITIONAL TRUSTEES -->
+
+    <div class="additional-heading">
         Additional Trustees
     </div>
+
 
     <div class="additional-grid">
 
         <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀ ಕೆ. ಕೃಷ್ಣಸ್ವಾಮಿ</p>
-            <p class="english-name">Sri K. Krishnaswamy</p>
+
+            <p class="kannada-name">
+                ಶ್ರೀ ಕೆ. ಕೃಷ್ಣಸ್ವಾಮಿ
+            </p>
+
+            <p class="english-name">
+                Sri K. Krishnaswamy, Bengaluru
+            </p>
+
         </div>
 
-        <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಸುಶೀಲಾ</p>
-            <p class="english-name">Smt. Sushila</p>
-        </div>
 
         <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಸವಿತಾ ರಮೇಶ್</p>
-            <p class="english-name">Smt. Savitha Ramesh</p>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಸುಶೀಲಾ
+            </p>
+
+            <p class="english-name">
+                Smt. Sushila
+            </p>
+
         </div>
 
-        <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಶಿಲ್ಪಾ ರಾಜಗೋಪಾಲ್</p>
-            <p class="english-name">Smt. Shilpa Rajgopal</p>
-        </div>
 
         <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಕೋಮಲಾ</p>
-            <p class="english-name">Smt. Komala</p>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಸವಿತಾ ರಮೇಶ್
+            </p>
+
+            <p class="english-name">
+                Smt. Savitha Ramesh
+            </p>
+
         </div>
 
-        <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಲಲನಾ ಕೃಷ್ಣಮೂರ್ತಿ</p>
-            <p class="english-name">Smt. Lalana Krishnamurthy</p>
-        </div>
 
         <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಎನ್. ಎಸ್. ವಿದ್ಯಾ ಧನಂಜಯ್</p>
-            <p class="english-name">Smt. N. S. Vidya Dhananjay</p>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಶಿಲ್ಪಾ ರಾಜಗೋಪಾಲ್
+            </p>
+
+            <p class="english-name">
+                Smt. Shilpa Rajgopal
+            </p>
+
         </div>
 
+
         <div class="additional-member">
-            <p class="kannada-name">ಶ್ರೀಮತಿ ಶಿಲ್ಪಾ ಜಗದೀಶ್</p>
-            <p class="english-name">Smt. Shilpa Jagadeesh</p>
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಕೋಮಲಾ
+            </p>
+
+            <p class="english-name">
+                Smt. Komala
+            </p>
+
+        </div>
+
+
+        <div class="additional-member">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಲಲನಾ ಕೃಷ್ಣಮೂರ್ತಿ
+            </p>
+
+            <p class="english-name">
+                Smt. Lalana Krishnamurthy
+            </p>
+
+        </div>
+
+
+        <div class="additional-member">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಎನ್. ಎಸ್. ವಿದ್ಯಾ ಧನಂಜಯ
+            </p>
+
+            <p class="english-name">
+                Smt. N. S. Vidya Dhananjay
+            </p>
+
+        </div>
+
+
+        <div class="additional-member">
+
+            <p class="kannada-name">
+                ಶ್ರೀಮತಿ ಶಿಲ್ಪಾ ಜಗದೀಶ್
+            </p>
+
+            <p class="english-name">
+                Smt. Shilpa Jagadeesh
+            </p>
+
         </div>
 
     </div>
 
 
-    <!-- ================= BACK BUTTON ================= -->
+    <!-- BACK -->
 
     <a href="dashboard.html" class="back-button" id="backButton">
         ← Back to Dashboard
@@ -326,22 +759,28 @@
 
     if (language === "Kannada") {
 
-        document.getElementById("pageTitle").innerText =
-            "ಟ್ರಸ್ಟಿಗಳು";
+        document.getElementById("mainHeading").innerText =
+            "ಕುಂಚಿಟಿಗರ ಸಾರ್ವಜನಿಕ ಸೇವಾ ದತ್ತಿ (ರಿ.)";
 
-        document.getElementById("pageSubtitle").innerText =
-            "ಕುಂಚಿಟಿಗರ ಸಾರ್ವಜನಿಕ ಸೇವಾ ದತ್ತಿ (ರಿ.) – ವಾಗ್ದೇವಿ ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯ";
+        document.getElementById("subHeading").innerText =
+            "ವಾಗ್ದೇವಿ ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯ";
+
+        document.getElementById("committeeHeading").innerText =
+            "ಹೆಸರುಗಳು";
 
         document.getElementById("backButton").innerText =
             "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂತಿರುಗಿ";
 
     } else {
 
-        document.getElementById("pageTitle").innerText =
-            "Trustees";
+        document.getElementById("mainHeading").innerText =
+            "Kunchitigara Sarvajanika Seva Datti (R.)";
 
-        document.getElementById("pageSubtitle").innerText =
-            "Kunchitigara Sarvajanika Seva Datti (R.) – Vagdevi Vidyarthini Nilaya";
+        document.getElementById("subHeading").innerText =
+            "Vagdevi Vidyarthini Nilaya";
+
+        document.getElementById("committeeHeading").innerText =
+            "Trustees";
 
         document.getElementById("backButton").innerText =
             "← Back to Dashboard";
