@@ -20,21 +20,10 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-
             min-height: 100vh;
-
-            background-image:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.60),
-                    rgba(0, 0, 0, 0.60)
-                ),
-                url("../images/hostel.jpg");
-
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-
-            padding: 30px 20px;
+            background: #f7f7fb;
+            color: #333;
+            padding: 35px 20px;
         }
 
         .container {
@@ -44,181 +33,132 @@
 
         .header {
             text-align: center;
-            color: white;
-            margin-bottom: 30px;
+            margin-bottom: 45px;
         }
 
         .header h1 {
             font-size: 38px;
+            color: #6a1b9a;
             margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 19px;
+            font-size: 20px;
+            color: #666;
         }
 
-        .content-box {
-            background: rgba(255, 255, 255, 0.96);
-
-            padding: 30px;
-
-            border-radius: 18px;
-
-            margin-bottom: 25px;
-
-            box-shadow:
-                0 8px 20px rgba(0, 0, 0, 0.20);
+        .section {
+            margin-bottom: 38px;
         }
 
-        .content-box h2 {
-            color: #7b1fa2;
-
+        .section h2 {
+            color: #6a1b9a;
+            font-size: 27px;
             margin-bottom: 15px;
-
-            font-size: 25px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5d5ed;
         }
 
-        .content-box p {
-            color: #444;
-
-            line-height: 1.8;
-
-            margin-bottom: 13px;
-
-            font-size: 16px;
-        }
-
-        .timeline {
-            display: grid;
-
-            gap: 15px;
-        }
-
-        .timeline-item {
-            background: #f8f1fa;
-
-            padding: 18px;
-
-            border-radius: 10px;
-
-            border-left: 5px solid #7b1fa2;
-        }
-
-        .timeline-item h3 {
+        .section h3 {
             color: #7b1fa2;
-
+            font-size: 21px;
+            margin-top: 24px;
             margin-bottom: 8px;
         }
 
-        .timeline-item p {
-            margin-bottom: 0;
-        }
-
-        .people-list {
-            padding-left: 25px;
-
-            color: #444;
-
-            line-height: 2;
-
+        .section p {
             font-size: 16px;
-        }
-
-        .facility-list {
-            padding-left: 25px;
-
+            line-height: 1.85;
             color: #444;
-
-            line-height: 2;
-        }
-
-        .donation-box {
-            background: #f8f1fa;
-
-            padding: 20px;
-
-            border-radius: 12px;
-
-            margin-top: 15px;
-        }
-
-        .donation-box h3 {
-            color: #7b1fa2;
-
             margin-bottom: 12px;
         }
 
-        .bank-details {
-            line-height: 1.9;
+        .section ul {
+            padding-left: 25px;
+            margin-top: 10px;
+        }
 
+        .section li {
+            font-size: 16px;
+            line-height: 2;
             color: #444;
         }
 
-        .bank-details strong {
-            color: #333;
+        .journey {
+            border-left: 4px solid #7b1fa2;
+            padding-left: 20px;
         }
 
         .appeal {
+            margin-top: 18px;
+            padding: 18px 20px;
             background: #f3e5f5;
+            border-left: 4px solid #7b1fa2;
+        }
 
-            border-left: 5px solid #7b1fa2;
+        .appeal strong {
+            color: #6a1b9a;
+            font-size: 18px;
+        }
 
-            padding: 20px;
+        .donation-details {
+            line-height: 2;
+            margin-top: 10px;
+        }
 
-            border-radius: 10px;
-
-            color: #444;
-
-            line-height: 1.8;
+        .donation-details strong {
+            color: #333;
         }
 
         .back-button {
             display: block;
-
-            width: 190px;
-
-            margin: 30px auto 0;
-
-            padding: 12px;
-
-            background: white;
-
-            color: #7b1fa2;
-
+            width: 200px;
+            margin: 45px auto 10px;
+            padding: 13px;
+            background: #6a1b9a;
+            color: white;
             text-align: center;
-
             text-decoration: none;
-
             border-radius: 25px;
-
             font-weight: bold;
+            transition: 0.3s;
         }
 
         .back-button:hover {
-            background: #f3e5f5;
+            background: #4a148c;
         }
 
         @media (max-width: 600px) {
 
             body {
-                padding: 20px 12px;
+                padding: 25px 16px;
             }
 
             .header h1 {
-                font-size: 28px;
+                font-size: 30px;
             }
 
-            .content-box {
-                padding: 22px 18px;
+            .header p {
+                font-size: 18px;
             }
 
-            .content-box h2 {
-                font-size: 22px;
+            .section h2 {
+                font-size: 23px;
             }
 
-            .content-box p {
+            .section h3 {
+                font-size: 19px;
+            }
+
+            .section p,
+            .section li {
                 font-size: 15px;
             }
+
+            .journey {
+                padding-left: 15px;
+            }
+
         }
 
     </style>
@@ -228,6 +168,8 @@
 <body>
 
     <div class="container">
+
+        <!-- HEADER -->
 
         <div class="header">
 
@@ -242,7 +184,9 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- INTRODUCTION -->
+
+        <div class="section">
 
             <h2 id="introTitle">
                 Vagdevi Vidyarthini Nilaya
@@ -268,95 +212,81 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- JOURNEY -->
+
+        <div class="section">
 
             <h2 id="journeyTitle">
                 Our Journey
             </h2>
 
-            <div class="timeline">
+            <div class="journey">
 
-                <div class="timeline-item">
+                <h3 id="year2001">
+                    2001 - Organization Founded
+                </h3>
 
-                    <h3 id="year2001">
-                        2001 - Organization Founded
-                    </h3>
-
-                    <p id="year2001Text">
-                        Kunchitigara Sarvajanika Seva Datti (R.)
-                        was registered in 2001 under the Indian
-                        Trust Act to support education and
-                        students.
-                    </p>
-
-                </div>
+                <p id="year2001Text">
+                    Kunchitigara Sarvajanika Seva Datti (R.)
+                    was registered in 2001 under the Indian
+                    Trust Act to support education and
+                    students.
+                </p>
 
 
-                <div class="timeline-item">
+                <h3 id="landTitle">
+                    Land Donation
+                </h3>
 
-                    <h3 id="landTitle">
-                        Land Donation
-                    </h3>
-
-                    <p id="landText">
-                        Mr. B.R. Rajeev donated 10 guntas of
-                        land in Hegganahalli, Bengaluru,
-                        for establishing a girls' hostel.
-                    </p>
-
-                </div>
+                <p id="landText">
+                    Mr. B.R. Rajeev donated 10 guntas of
+                    land in Hegganahalli, Bengaluru,
+                    for establishing a girls' hostel.
+                </p>
 
 
-                <div class="timeline-item">
+                <h3 id="earlySupportTitle">
+                    Early Support for Students
+                </h3>
 
-                    <h3 id="earlySupportTitle">
-                        Early Support for Students
-                    </h3>
-
-                    <p id="earlySupportText">
-                        Before the hostel building was
-                        constructed, Smt. Jyothi Balakrishna
-                        and other donors provided free
-                        accommodation for students in their
-                        homes for several years.
-                    </p>
-
-                </div>
+                <p id="earlySupportText">
+                    Before the hostel building was
+                    constructed, Smt. Jyothi Balakrishna
+                    and other donors provided free
+                    accommodation for students in their
+                    homes for several years.
+                </p>
 
 
-                <div class="timeline-item">
+                <h3 id="buildingTitle">
+                    2008 - Hostel Building
+                </h3>
 
-                    <h3 id="buildingTitle">
-                        2008 - Hostel Building
-                    </h3>
-
-                    <p id="buildingText">
-                        A hostel building costing approximately
-                        ₹1.5 crore was constructed through
-                        donations and inaugurated in 2008.
-                    </p>
-
-                </div>
+                <p id="buildingText">
+                    A hostel building costing approximately
+                    ₹1.5 crore was constructed through
+                    donations and inaugurated in 2008.
+                </p>
 
 
-                <div class="timeline-item">
+                <h3 id="expansionTitle">
+                    2023 - Third Floor Expansion
+                </h3>
 
-                    <h3 id="expansionTitle">
-                        2023 - Third Floor Expansion
-                    </h3>
-
-                    <p id="expansionText">
-                        Due to increasing demand, construction
-                        of an additional third floor began in
-                        October 2023 using trust funds.
-                    </p>
-
-                </div>
+                <p id="expansionText">
+                    Due to increasing demand, construction
+                    of an additional third floor began in
+                    October 2023 using trust funds.
+                </p>
 
             </div>
 
         </div>
-        <div class="content-box">
+
+
+        <!-- PEOPLE -->
+
+        <div class="section">
 
             <h2 id="peopleTitle">
                 People Who Supported the Hostel
@@ -368,50 +298,28 @@
                 and support to girl students.
             </p>
 
-            <ul class="people-list">
+            <ul>
 
-                <li>
-                    <strong>
-                        Smt. Jyothi Balakrishna
-                    </strong>
-                </li>
+                <li><strong>Smt. Jyothi Balakrishna</strong></li>
 
-                <li>
-                    <strong>
-                        Shakuntala Ramesh
-                    </strong>
-                </li>
+                <li><strong>Shakuntala Ramesh</strong></li>
 
-                <li>
-                    <strong>
-                        Smt. Gowramma Srinivasaiah
-                    </strong>
-                </li>
+                <li><strong>Smt. Gowramma Srinivasaiah</strong></li>
 
-                <li>
-                    <strong>
-                        Smt. Suvarna Lingraja
-                    </strong>
-                </li>
+                <li><strong>Smt. Suvarna Lingraja</strong></li>
 
-                <li>
-                    <strong>
-                        Shobha Chandrashekar
-                    </strong>
-                </li>
+                <li><strong>Shobha Chandrashekar</strong></li>
 
-                <li>
-                    <strong>
-                        Smt. Leela Somshekhar
-                    </strong>
-                </li>
+                <li><strong>Smt. Leela Somshekar</strong></li>
 
             </ul>
 
         </div>
 
 
-        <div class="content-box">
+        <!-- CAPACITY -->
+
+        <div class="section">
 
             <h2 id="capacityTitle">
                 Hostel Capacity
@@ -431,7 +339,9 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- FACILITIES -->
+
+        <div class="section">
 
             <h2 id="facilitiesTitle">
                 Facilities and Student Support
@@ -443,7 +353,7 @@
                 education in Bengaluru.
             </p>
 
-            <ul class="facility-list">
+            <ul>
 
                 <li id="facility1">
                     Accommodation
@@ -481,7 +391,9 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- THIRD FLOOR -->
+
+        <div class="section">
 
             <h2 id="expansionSectionTitle">
                 Third Floor Expansion
@@ -517,22 +429,76 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- ROOM SPONSORSHIP -->
+
+        <div class="section">
 
             <h2 id="sponsorshipTitle">
                 Room Sponsorship
             </h2>
 
-            <div class="donation-box">
+            <h3 id="sponsorshipAmount">
+                ₹5,00,000 (5 Lakhs) per room
+            </h3>
 
-                <h3 id="sponsorshipAmount">
-                    ₹5,00,000 (5 Lakhs) per room
-                </h3>
+            <p id="sponsorshipText">
+                A donor can sponsor a complete room.
+                The donor's name and photograph can be
+                displayed outside the sponsored room.
+            </p>
 
-                <p id="sponsorshipText">
-                    A donor can sponsor a complete room.
-                    The donor's name and photograph can be
-                    displayed outside the sponsored room.
+        </div>
+
+
+        <!-- BANK DETAILS -->
+
+        <div class="section">
+
+            <h2 id="bankTitle">
+                Donation Bank Details
+            </h2>
+
+            <div class="donation-details">
+
+                <p>
+                    <strong id="accountNameLabel">
+                        Account Name:
+                    </strong>
+
+                    Kunchitigara Sarvajanika Seva Trust
+                </p>
+
+                <p>
+                    <strong id="bankNameLabel">
+                        Bank:
+                    </strong>
+
+                    Canara Bank, Hegganahalli Branch,
+                    Bengaluru
+                </p>
+
+                <p>
+                    <strong id="accountNumberLabel">
+                        Current Account No.:
+                    </strong>
+
+                    120000088187
+                </p>
+
+                <p>
+                    <strong id="ifscLabel">
+                        IFSC Code:
+                    </strong>
+
+                    CNRB0003196
+                </p>
+
+                <p>
+                    <strong id="panLabel">
+                        PAN:
+                    </strong>
+
+                    AABTA08354
                 </p>
 
             </div>
@@ -540,79 +506,9 @@
         </div>
 
 
-        <div class="content-box">
+        <!-- CONTACT -->
 
-            <h2 id="bankTitle">
-                Donation Bank Details
-            </h2>
-
-            <div class="donation-box">
-
-                <div class="bank-details">
-
-                    <p>
-                        <strong id="accountNameLabel">
-                            Account Name:
-                        </strong>
-
-                        <span>
-                            Kunchitigara Sarvajanika Seva Trust
-                        </span>
-                    </p>
-
-
-                    <p>
-                        <strong id="bankNameLabel">
-                            Bank:
-                        </strong>
-
-                        <span>
-                            Canara Bank, Hegganahalli Branch,
-                            Bengaluru
-                        </span>
-                    </p>
-
-
-                    <p>
-                        <strong id="accountNumberLabel">
-                            Current Account No.:
-                        </strong>
-
-                        <span>
-                            120000088187
-                        </span>
-                    </p>
-
-
-                    <p>
-                        <strong id="ifscLabel">
-                            IFSC Code:
-                        </strong>
-
-                        <span>
-                            CNRB0003196
-                        </span>
-                    </p>
-
-
-                    <p>
-                        <strong id="panLabel">
-                            PAN:
-                        </strong>
-
-                        <span>
-                            AABTA08354
-                        </span>
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="content-box">
+        <div class="section">
 
             <h2 id="contactTitle">
                 Contact
@@ -624,19 +520,17 @@
             </p>
 
             <p>
-                <strong>
-                    9448687451
-                </strong>
+                <strong>9448687451</strong>
             </p>
 
             <p>
-                <strong>
-                    9845194883
-                </strong>
+                <strong>9845194883</strong>
             </p>
 
         </div>
 
+
+        <!-- BACK -->
 
         <a href="dashboard.html"
            class="back-button"
@@ -647,6 +541,8 @@
         </a>
 
     </div>
+
+
     <script>
 
         const selectedLanguage =
@@ -882,7 +778,6 @@
         }
 
     </script>
-
 
 </body>
 

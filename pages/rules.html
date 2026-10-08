@@ -8,6 +8,7 @@
     <title>Rules & Regulations - Vagdevi Ladies Hostel</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -15,132 +16,170 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.55),
-                    rgba(0, 0, 0, 0.55)),
-                url("../images/hostel.jpg");
-
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7fb;
+            color: #333;
             min-height: 100vh;
-            padding: 30px 15px;
+            padding: 40px 6%;
         }
 
-        .container {
-            max-width: 1000px;
+        .page {
+            width: 100%;
+            max-width: 1250px;
             margin: auto;
-            background: white;
-            border-radius: 18px;
-            padding: 35px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
+
+        /* HEADER */
 
         .header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 45px;
         }
 
         .header h1 {
             color: #4b2e83;
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 38px;
+            margin-bottom: 12px;
         }
 
         .header h2 {
             color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 14px;
         }
 
         .header p {
             color: #666;
-            font-size: 16px;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 850px;
+            margin: auto;
         }
 
-        .rules-box {
-            margin-top: 20px;
-        }
+        /* RULES */
 
         .rules-list {
-            padding-left: 25px;
+            padding-left: 35px;
+            margin: 0;
         }
 
         .rules-list li {
-            margin-bottom: 18px;
-            line-height: 1.7;
+            padding-left: 12px;
+            margin-bottom: 24px;
             color: #333;
-            font-size: 16px;
-            padding-left: 8px;
+            font-size: 17px;
+            line-height: 1.8;
         }
 
         .rules-list li::marker {
-            font-weight: bold;
             color: #4b2e83;
+            font-weight: bold;
+            font-size: 17px;
         }
 
+        /* IMPORTANT */
+
         .important {
-            background: #f4efff;
-            border-left: 5px solid #4b2e83;
-            padding: 18px;
-            margin-top: 25px;
-            border-radius: 8px;
+            margin-top: 35px;
+            padding: 20px 0;
+            border-top: 2px solid #ded6e7;
+            border-bottom: 2px solid #ded6e7;
         }
 
         .important h3 {
             color: #4b2e83;
+            font-size: 22px;
             margin-bottom: 8px;
         }
 
         .important p {
             color: #444;
-            line-height: 1.6;
+            font-size: 16px;
+            line-height: 1.8;
         }
+
+        /* BACK BUTTON */
 
         .back-button {
             display: block;
-            width: fit-content;
-            margin: 30px auto 0;
-            padding: 12px 25px;
+            width: 210px;
+            margin: 45px auto 10px;
+            padding: 13px 20px;
             background: #4b2e83;
             color: white;
+            text-align: center;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 25px;
             font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .back-button:hover {
             background: #36215f;
         }
 
-        @media (max-width: 600px) {
+        /* MOBILE */
 
-            .container {
-                padding: 22px;
+        @media (max-width: 700px) {
+
+            body {
+                padding: 30px 20px;
+            }
+
+            .header {
+                margin-bottom: 35px;
             }
 
             .header h1 {
-                font-size: 26px;
+                font-size: 29px;
             }
 
             .header h2 {
-                font-size: 20px;
+                font-size: 21px;
+            }
+
+            .header p {
+                font-size: 15px;
+            }
+
+            .rules-list {
+                padding-left: 27px;
             }
 
             .rules-list li {
                 font-size: 15px;
+                line-height: 1.75;
+                margin-bottom: 20px;
+                padding-left: 8px;
             }
+
+            .important h3 {
+                font-size: 20px;
+            }
+
+            .important p {
+                font-size: 15px;
+            }
+
         }
+
     </style>
+
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="page">
+
+        <!-- HEADER -->
 
         <div class="header">
-            <h1 id="hostelName">Vagdevi Ladies Hostel</h1>
+
+            <h1 id="hostelName">
+                Vagdevi Ladies Hostel
+            </h1>
 
             <h2 id="pageTitle">
                 Vidyarthini Nilaya (Girls' Hostel)
@@ -151,134 +190,137 @@
                 Students are expected to follow the following
                 rules and regulations during their stay in the hostel.
             </p>
-        </div>
-
-        <div class="rules-box">
-
-            <ol class="rules-list">
-
-                <li id="rule1">
-                    Students must properly utilize all facilities
-                    provided in the hostel during their stay.
-                </li>
-
-                <li id="rule2">
-                    Students should conduct themselves well,
-                    respecting the sacrifices made by the hostel
-                    management and staff, and build a bright future
-                    using these facilities.
-                </li>
-
-                <li id="rule3">
-                    Students must keep their rooms clean, sweep
-                    morning and evening, clean the walls and cobwebs
-                    monthly, and throw garbage into the designated
-                    dustbins. Sitting on tables is strictly prohibited.
-                </li>
-
-                <li id="rule4">
-                    Parents, relatives, friends, or visitors are not
-                    allowed inside the hostel rooms. Designated visiting
-                    hours in external common areas must be used.
-                </li>
-
-                <li id="rule5">
-                    Use of heavy electrical appliances like electric
-                    heaters, irons, stoves, computers, etc., in rooms
-                    is strictly prohibited. Students will be held
-                    personally responsible for any damage or mishaps
-                    caused.
-                </li>
-
-                <li id="rule6">
-                    Students must use bath water, tap water, and
-                    borewell water carefully without wasting it.
-                </li>
-
-                <li id="rule7">
-                    Students must treat fellow boarders like sisters,
-                    maintain friendship, and behave with respect,
-                    love, and affection toward the warden and cook.
-                </li>
-
-                <li id="rule8">
-                    Any problems inside the hostel must be brought to
-                    the warden's or secretary's attention first.
-                    Indiscipline or disobedience will attract strict
-                    disciplinary action.
-                </li>
-
-                <li id="rule9">
-                    Food must be consumed only in the dining hall.
-                    Take only required quantities, do not leave food
-                    scraps on tables, throw plates and waste in bins,
-                    clean table surfaces, and do not sit on tables to eat.
-                </li>
-
-                <li id="rule10">
-                    If leaving the hostel, such as going home,
-                    out-of-station, college trips, or staying with
-                    relatives, prior written permission must be
-                    obtained from the Warden or Secretary.
-                </li>
-
-                <li id="rule11">
-                    Hostel timings are from 6:00 AM to 7:00 PM.
-                    If students wish to enter the hostel after
-                    7:00 PM, they must obtain prior permission
-                    from the warden.
-                </li>
-
-                <li id="rule12">
-                    Students must attend meals and prayers on time.
-                    Attendance is mandatory during evening joint prayers.
-                    Biometric finger registration is compulsory when
-                    entering or leaving the hostel.
-                </li>
-
-                <li id="rule13">
-                    Furniture items such as cots, chairs, tables,
-                    fans, locks, windows, etc., must be used carefully.
-                    Upon leaving the hostel, items must be handed back
-                    in good condition. Students will bear repair costs
-                    if damaged.
-                </li>
-
-                <li id="rule14A">
-                    <strong>(A)</strong> The annual hostel academic
-                    period runs from August 1 to July 31. Existing
-                    students continuing studies must submit
-                    re-admission applications by July 25.
-                </li>
-
-                <li id="rule14B">
-                    <strong>(B)</strong> New applicants must submit
-                    filled application forms between June 1 and June 30.
-                </li>
-
-                <li id="rule15">
-                    Students must focus on studies, perform well in
-                    all college exams, and submit mark cards immediately
-                    after each semester result. Failing an exam leads
-                    to loss of hostel accommodation without fee refunds.
-                </li>
-
-                <li id="rule16">
-                    Students residing in the hostel are not permitted
-                    to take up any government or private employment.
-                    Doing so will lead to disciplinary action.
-                </li>
-
-                <li id="rule17">
-                    Students must keep the hostel premises and
-                    restrooms clean, follow instructions from the
-                    warden and management diligently, and pay for
-                    any repairs caused by misuse.
-                </li>
-
-            </ol>
 
         </div>
+
+
+        <!-- RULES -->
+
+        <ol class="rules-list">
+
+            <li id="rule1">
+                Students must properly utilize all facilities
+                provided in the hostel during their stay.
+            </li>
+
+            <li id="rule2">
+                Students should conduct themselves well,
+                respecting the sacrifices made by the hostel
+                management and staff, and build a bright future
+                using these facilities.
+            </li>
+
+            <li id="rule3">
+                Students must keep their rooms clean, sweep
+                morning and evening, clean the walls and cobwebs
+                monthly, and throw garbage into the designated
+                dustbins. Sitting on tables is strictly prohibited.
+            </li>
+
+            <li id="rule4">
+                Parents, relatives, friends, or visitors are not
+                allowed inside the hostel rooms. Designated visiting
+                hours in external common areas must be used.
+            </li>
+
+            <li id="rule5">
+                Use of heavy electrical appliances like electric
+                heaters, irons, stoves, computers, etc., in rooms
+                is strictly prohibited. Students will be held
+                personally responsible for any damage or mishaps
+                caused.
+            </li>
+
+            <li id="rule6">
+                Students must use bath water, tap water, and
+                borewell water carefully without wasting it.
+            </li>
+
+            <li id="rule7">
+                Students must treat fellow boarders like sisters,
+                maintain friendship, and behave with respect,
+                love, and affection toward the warden and cook.
+            </li>
+
+            <li id="rule8">
+                Any problems inside the hostel must be brought to
+                the warden's or secretary's attention first.
+                Indiscipline or disobedience will attract strict
+                disciplinary action.
+            </li>
+
+            <li id="rule9">
+                Food must be consumed only in the dining hall.
+                Take only required quantities, do not leave food
+                scraps on tables, throw plates and waste in bins,
+                clean table surfaces, and do not sit on tables to eat.
+            </li>
+
+            <li id="rule10">
+                If leaving the hostel, such as going home,
+                out-of-station, college trips, or staying with
+                relatives, prior written permission must be
+                obtained from the Warden or Secretary.
+            </li>
+
+            <li id="rule11">
+                Hostel timings are from 6:00 AM to 7:00 PM.
+                If students wish to enter the hostel after
+                7:00 PM, they must obtain prior permission
+                from the warden.
+            </li>
+
+            <li id="rule12">
+                Students must attend meals and prayers on time.
+                Attendance is mandatory during evening joint prayers.
+                Biometric finger registration is compulsory when
+                entering or leaving the hostel.
+            </li>
+
+            <li id="rule13">
+                Furniture items such as cots, chairs, tables,
+                fans, locks, windows, etc., must be used carefully.
+                Upon leaving the hostel, items must be handed back
+                in good condition. Students will bear repair costs
+                if damaged.
+            </li>
+
+            <li id="rule14A">
+                <strong>(A)</strong> The annual hostel academic
+                period runs from August 1 to July 31. Existing
+                students continuing studies must submit
+                re-admission applications by July 25.
+            </li>
+
+            <li id="rule14B">
+                <strong>(B)</strong> New applicants must submit
+                filled application forms between June 1 and June 30.
+            </li>
+
+            <li id="rule15">
+                Students must focus on studies, perform well in
+                all college exams, and submit mark cards immediately
+                after each semester result. Failing an exam leads
+                to loss of hostel accommodation without fee refunds.
+            </li>
+
+            <li id="rule16">
+                Students residing in the hostel are not permitted
+                to take up any government or private employment.
+                Doing so will lead to disciplinary action.
+            </li>
+
+            <li id="rule17">
+                Students must keep the hostel premises and
+                restrooms clean, follow instructions from the
+                warden and management diligently, and pay for
+                any repairs caused by misuse.
+            </li>
+
+        </ol>
+
+
+        <!-- IMPORTANT -->
 
         <div class="important">
 
@@ -294,91 +336,103 @@
 
         </div>
 
-        <a href="dashboard.html" class="back-button" id="backButton">
+
+        <!-- BACK BUTTON -->
+
+        <a href="dashboard.html"
+           class="back-button"
+           id="backButton">
+
             ← Back to Dashboard
+
         </a>
 
     </div>
+
+
     <script>
 
-const selectedLanguage = localStorage.getItem("selectedLanguage");
+        const selectedLanguage =
+            localStorage.getItem("selectedLanguage");
 
-if (selectedLanguage === "Kannada") {
 
-    document.documentElement.lang = "kn";
+        if (selectedLanguage === "Kannada") {
 
-    document.getElementById("pageTitle").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯ (ಮಹಿಳಾ ವಸತಿ ನಿಲಯ) ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು";
+            document.documentElement.lang = "kn";
 
-    document.getElementById("introText").innerText =
-        "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ಸಂದರ್ಭದಲ್ಲಿ ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಕೆಳಗಿನ ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳನ್ನು ಪಾಲಿಸಬೇಕು.";
+            document.getElementById("pageTitle").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿ ನಿಲಯ (ಮಹಿಳಾ ವಸತಿ ನಿಲಯ) ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು";
 
-    document.getElementById("rule1").innerText =
-        "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ಸಂದರ್ಭದಲ್ಲಿ ಒದಗಿಸಲಾಗಿರುವ ಎಲ್ಲಾ ಸೌಲಭ್ಯಗಳನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರು ಸರಿಯಾಗಿ ಬಳಸಿಕೊಳ್ಳಬೇಕು.";
+            document.getElementById("introText").innerText =
+                "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ಸಂದರ್ಭದಲ್ಲಿ ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಕೆಳಗಿನ ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳನ್ನು ಪಾಲಿಸಬೇಕು.";
 
-    document.getElementById("rule2").innerText =
-        "ವಸತಿ ನಿಲಯದ ಆಡಳಿತ ಮಂಡಳಿ ಮತ್ತು ಸಿಬ್ಬಂದಿಯ ತ್ಯಾಗವನ್ನು ಗೌರವಿಸಿ, ಉತ್ತಮವಾಗಿ ನಡೆದುಕೊಳ್ಳಬೇಕು ಮತ್ತು ಈ ಸೌಲಭ್ಯಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಉತ್ತಮ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸಿಕೊಳ್ಳಬೇಕು.";
+            document.getElementById("rule1").innerText =
+                "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ಸಂದರ್ಭದಲ್ಲಿ ಒದಗಿಸಲಾಗಿರುವ ಎಲ್ಲಾ ಸೌಲಭ್ಯಗಳನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರು ಸರಿಯಾಗಿ ಬಳಸಿಕೊಳ್ಳಬೇಕು.";
 
-    document.getElementById("rule3").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿಯರು ತಮ್ಮ ಕೊಠಡಿಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ಬೆಳಿಗ್ಗೆ ಮತ್ತು ಸಂಜೆ ಗುಡಿಸಬೇಕು, ತಿಂಗಳಿಗೊಮ್ಮೆ ಗೋಡೆಗಳು ಮತ್ತು ಜೇಡರ ಬಲೆಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಬೇಕು ಹಾಗೂ ಕಸವನ್ನು ನಿಗದಿತ ಕಸದ ಬುಟ್ಟಿಗಳಲ್ಲಿ ಹಾಕಬೇಕು. ಮೇಜಿನ ಮೇಲೆ ಕುಳಿತುಕೊಳ್ಳುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ.";
+            document.getElementById("rule2").innerText =
+                "ವಸತಿ ನಿಲಯದ ಆಡಳಿತ ಮಂಡಳಿ ಮತ್ತು ಸಿಬ್ಬಂದಿಯ ತ್ಯಾಗವನ್ನು ಗೌರವಿಸಿ, ಉತ್ತಮವಾಗಿ ನಡೆದುಕೊಳ್ಳಬೇಕು ಮತ್ತು ಈ ಸೌಲಭ್ಯಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಉತ್ತಮ ಭವಿಷ್ಯವನ್ನು ರೂಪಿಸಿಕೊಳ್ಳಬೇಕು.";
 
-    document.getElementById("rule4").innerText =
-        "ಪೋಷಕರು, ಸಂಬಂಧಿಕರು, ಸ್ನೇಹಿತರು ಅಥವಾ ಇತರ ಭೇಟಿದಾರರು ವಸತಿ ನಿಲಯದ ಕೊಠಡಿಗಳ ಒಳಗೆ ಪ್ರವೇಶಿಸಲು ಅನುಮತಿ ಇಲ್ಲ. ನಿಗದಿತ ಭೇಟಿ ಸಮಯದಲ್ಲಿ ಹೊರಗಿನ ಸಾಮಾನ್ಯ ಸ್ಥಳಗಳಲ್ಲಿ ಮಾತ್ರ ಭೇಟಿಯಾಗಬೇಕು.";
+            document.getElementById("rule3").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರು ತಮ್ಮ ಕೊಠಡಿಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ಬೆಳಿಗ್ಗೆ ಮತ್ತು ಸಂಜೆ ಗುಡಿಸಬೇಕು, ತಿಂಗಳಿಗೊಮ್ಮೆ ಗೋಡೆಗಳು ಮತ್ತು ಜೇಡರ ಬಲೆಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಬೇಕು ಹಾಗೂ ಕಸವನ್ನು ನಿಗದಿತ ಕಸದ ಬುಟ್ಟಿಗಳಲ್ಲಿ ಹಾಕಬೇಕು. ಮೇಜಿನ ಮೇಲೆ ಕುಳಿತುಕೊಳ್ಳುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ.";
 
-    document.getElementById("rule5").innerText =
-        "ವಿದ್ಯುತ್ ಹೀಟರ್, ಇಸ್ತ್ರಿ ಪೆಟ್ಟಿಗೆ, ಸ್ಟೌವ್, ಕಂಪ್ಯೂಟರ್ ಮುಂತಾದ ಹೆಚ್ಚಿನ ವಿದ್ಯುತ್ ಬಳಸುವ ಉಪಕರಣಗಳನ್ನು ಕೊಠಡಿಗಳಲ್ಲಿ ಬಳಸುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ. ಇದರಿಂದ ಉಂಟಾಗುವ ಯಾವುದೇ ಹಾನಿ ಅಥವಾ ಅನಾಹುತಕ್ಕೆ ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ವೈಯಕ್ತಿಕವಾಗಿ ಜವಾಬ್ದಾರರಾಗಿರುತ್ತಾರೆ.";
+            document.getElementById("rule4").innerText =
+                "ಪೋಷಕರು, ಸಂಬಂಧಿಕರು, ಸ್ನೇಹಿತರು ಅಥವಾ ಇತರ ಭೇಟಿದಾರರು ವಸತಿ ನಿಲಯದ ಕೊಠಡಿಗಳ ಒಳಗೆ ಪ್ರವೇಶಿಸಲು ಅನುಮತಿ ಇಲ್ಲ. ನಿಗದಿತ ಭೇಟಿ ಸಮಯದಲ್ಲಿ ಹೊರಗಿನ ಸಾಮಾನ್ಯ ಸ್ಥಳಗಳಲ್ಲಿ ಮಾತ್ರ ಭೇಟಿಯಾಗಬೇಕು.";
 
-    document.getElementById("rule6").innerText =
-        "ಸ್ನಾನಕ್ಕೆ ಬಳಸುವ ನೀರು, ನಲ್ಲಿ ನೀರು ಮತ್ತು ಕೊಳವೆಬಾವಿಯ ನೀರನ್ನು ವ್ಯರ್ಥ ಮಾಡದೆ ಜಾಗರೂಕತೆಯಿಂದ ಬಳಸಬೇಕು.";
+            document.getElementById("rule5").innerText =
+                "ವಿದ್ಯುತ್ ಹೀಟರ್, ಇಸ್ತ್ರಿ ಪೆಟ್ಟಿಗೆ, ಸ್ಟೌವ್, ಕಂಪ್ಯೂಟರ್ ಮುಂತಾದ ಹೆಚ್ಚಿನ ವಿದ್ಯುತ್ ಬಳಸುವ ಉಪಕರಣಗಳನ್ನು ಕೊಠಡಿಗಳಲ್ಲಿ ಬಳಸುವುದನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ನಿಷೇಧಿಸಲಾಗಿದೆ. ಇದರಿಂದ ಉಂಟಾಗುವ ಯಾವುದೇ ಹಾನಿ ಅಥವಾ ಅನಾಹುತಕ್ಕೆ ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ವೈಯಕ್ತಿಕವಾಗಿ ಜವಾಬ್ದಾರರಾಗಿರುತ್ತಾರೆ.";
 
-    document.getElementById("rule7").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿಯರು ಪರಸ್ಪರ ಸಹೋದರಿಯರಂತೆ ನಡೆದುಕೊಂಡು ಸ್ನೇಹದಿಂದ ಇರಬೇಕು. ವಾರ್ಡನ್ ಮತ್ತು ಅಡುಗೆ ಸಿಬ್ಬಂದಿಯೊಂದಿಗೆ ಗೌರವ, ಪ್ರೀತಿ ಮತ್ತು ಸೌಹಾರ್ದದಿಂದ ವರ್ತಿಸಬೇಕು.";
+            document.getElementById("rule6").innerText =
+                "ಸ್ನಾನಕ್ಕೆ ಬಳಸುವ ನೀರು, ನಲ್ಲಿ ನೀರು ಮತ್ತು ಕೊಳವೆಬಾವಿಯ ನೀರನ್ನು ವ್ಯರ್ಥ ಮಾಡದೆ ಜಾಗರೂಕತೆಯಿಂದ ಬಳಸಬೇಕು.";
 
-    document.getElementById("rule8").innerText =
-        "ವಸತಿ ನಿಲಯದ ಒಳಗಿನ ಯಾವುದೇ ಸಮಸ್ಯೆಯನ್ನು ಮೊದಲು ವಾರ್ಡನ್ ಅಥವಾ ಕಾರ್ಯದರ್ಶಿಯ ಗಮನಕ್ಕೆ ತರಬೇಕು. ಶಿಸ್ತು ಉಲ್ಲಂಘನೆ ಅಥವಾ ಸೂಚನೆಗಳನ್ನು ಪಾಲಿಸದಿದ್ದಲ್ಲಿ ಕಟ್ಟುನಿಟ್ಟಿನ ಶಿಸ್ತಿನ ಕ್ರಮ ಕೈಗೊಳ್ಳಲಾಗುತ್ತದೆ.";
+            document.getElementById("rule7").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರು ಪರಸ್ಪರ ಸಹೋದರಿಯರಂತೆ ನಡೆದುಕೊಂಡು ಸ್ನೇಹದಿಂದ ಇರಬೇಕು. ವಾರ್ಡನ್ ಮತ್ತು ಅಡುಗೆ ಸಿಬ್ಬಂದಿಯೊಂದಿಗೆ ಗೌರವ, ಪ್ರೀತಿ ಮತ್ತು ಸೌಹಾರ್ದದಿಂದ ವರ್ತಿಸಬೇಕು.";
 
-    document.getElementById("rule9").innerText =
-        "ಆಹಾರವನ್ನು ಊಟದ ಕೋಣೆಯಲ್ಲಿ ಮಾತ್ರ ಸೇವಿಸಬೇಕು. ಅಗತ್ಯವಿರುವಷ್ಟು ಆಹಾರವನ್ನು ಮಾತ್ರ ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ಮೇಜಿನ ಮೇಲೆ ಆಹಾರದ ಉಳಿಕೆಗಳನ್ನು ಬಿಡಬಾರದು. ತಟ್ಟೆ ಮತ್ತು ಕಸವನ್ನು ಕಸದ ಬುಟ್ಟಿಯಲ್ಲಿ ಹಾಕಬೇಕು. ಊಟದ ನಂತರ ಮೇಜಿನ ಮೇಲ್ಮೈಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಬೇಕು ಮತ್ತು ಊಟ ಮಾಡುವಾಗ ಮೇಜಿನ ಮೇಲೆ ಕುಳಿತುಕೊಳ್ಳಬಾರದು.";
+            document.getElementById("rule8").innerText =
+                "ವಸತಿ ನಿಲಯದ ಒಳಗಿನ ಯಾವುದೇ ಸಮಸ್ಯೆಯನ್ನು ಮೊದಲು ವಾರ್ಡನ್ ಅಥವಾ ಕಾರ್ಯದರ್ಶಿಯ ಗಮನಕ್ಕೆ ತರಬೇಕು. ಶಿಸ್ತು ಉಲ್ಲಂಘನೆ ಅಥವಾ ಸೂಚನೆಗಳನ್ನು ಪಾಲಿಸದಿದ್ದಲ್ಲಿ ಕಟ್ಟುನಿಟ್ಟಿನ ಶಿಸ್ತಿನ ಕ್ರಮ ಕೈಗೊಳ್ಳಲಾಗುತ್ತದೆ.";
 
-    document.getElementById("rule10").innerText =
-        "ಮನೆಗೆ ಹೋಗುವುದು, ಊರಿನಿಂದ ಹೊರಗೆ ಹೋಗುವುದು, ಕಾಲೇಜು ಪ್ರವಾಸಕ್ಕೆ ಹೋಗುವುದು ಅಥವಾ ಸಂಬಂಧಿಕರ ಮನೆಯಲ್ಲಿ ಉಳಿಯುವುದು ಮುಂತಾದ ಸಂದರ್ಭಗಳಲ್ಲಿ ವಸತಿ ನಿಲಯದಿಂದ ಹೊರಹೋಗುವ ಮೊದಲು ವಾರ್ಡನ್ ಅಥವಾ ಕಾರ್ಯದರ್ಶಿಯಿಂದ ಲಿಖಿತ ಅನುಮತಿ ಪಡೆಯಬೇಕು.";
+            document.getElementById("rule9").innerText =
+                "ಆಹಾರವನ್ನು ಊಟದ ಕೋಣೆಯಲ್ಲಿ ಮಾತ್ರ ಸೇವಿಸಬೇಕು. ಅಗತ್ಯವಿರುವಷ್ಟು ಆಹಾರವನ್ನು ಮಾತ್ರ ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ಮೇಜಿನ ಮೇಲೆ ಆಹಾರದ ಉಳಿಕೆಗಳನ್ನು ಬಿಡಬಾರದು. ತಟ್ಟೆ ಮತ್ತು ಕಸವನ್ನು ಕಸದ ಬುಟ್ಟಿಯಲ್ಲಿ ಹಾಕಬೇಕು. ಊಟದ ನಂತರ ಮೇಜಿನ ಮೇಲ್ಮೈಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಬೇಕು ಮತ್ತು ಊಟ ಮಾಡುವಾಗ ಮೇಜಿನ ಮೇಲೆ ಕುಳಿತುಕೊಳ್ಳಬಾರದು.";
 
-    document.getElementById("rule11").innerText =
-        "ವಸತಿ ನಿಲಯದ ಸಮಯ ಬೆಳಿಗ್ಗೆ 6:00 ಗಂಟೆಯಿಂದ ಸಂಜೆ 7:00 ಗಂಟೆಯವರೆಗೆ ಇರುತ್ತದೆ. ಸಂಜೆ 7:00 ಗಂಟೆಯ ನಂತರ ವಸತಿ ನಿಲಯಕ್ಕೆ ಪ್ರವೇಶಿಸಲು ಬಯಸಿದರೆ, ವಾರ್ಡನ್‌ನಿಂದ ಮುಂಚಿತವಾಗಿ ಅನುಮತಿ ಪಡೆಯಬೇಕು.";
+            document.getElementById("rule10").innerText =
+                "ಮನೆಗೆ ಹೋಗುವುದು, ಊರಿನಿಂದ ಹೊರಗೆ ಹೋಗುವುದು, ಕಾಲೇಜು ಪ್ರವಾಸಕ್ಕೆ ಹೋಗುವುದು ಅಥವಾ ಸಂಬಂಧಿಕರ ಮನೆಯಲ್ಲಿ ಉಳಿಯುವುದು ಮುಂತಾದ ಸಂದರ್ಭಗಳಲ್ಲಿ ವಸತಿ ನಿಲಯದಿಂದ ಹೊರಹೋಗುವ ಮೊದಲು ವಾರ್ಡನ್ ಅಥವಾ ಕಾರ್ಯದರ್ಶಿಯಿಂದ ಲಿಖಿತ ಅನುಮತಿ ಪಡೆಯಬೇಕು.";
 
-    document.getElementById("rule12").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿಯರು ಊಟ ಮತ್ತು ಪ್ರಾರ್ಥನೆಗಳಿಗೆ ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ಹಾಜರಾಗಬೇಕು. ಸಂಜೆ ನಡೆಯುವ ಸಾಮೂಹಿಕ ಪ್ರಾರ್ಥನೆಗೆ ಹಾಜರಾಗುವುದು ಕಡ್ಡಾಯ. ವಸತಿ ನಿಲಯಕ್ಕೆ ಪ್ರವೇಶಿಸುವಾಗ ಮತ್ತು ಹೊರಹೋಗುವಾಗ ಬಯೋಮೆಟ್ರಿಕ್ ಬೆರಳಚ್ಚು ನೋಂದಣಿ ಕಡ್ಡಾಯವಾಗಿದೆ.";
+            document.getElementById("rule11").innerText =
+                "ವಸತಿ ನಿಲಯದ ಸಮಯ ಬೆಳಿಗ್ಗೆ 6:00 ಗಂಟೆಯಿಂದ ಸಂಜೆ 7:00 ಗಂಟೆಯವರೆಗೆ ಇರುತ್ತದೆ. ಸಂಜೆ 7:00 ಗಂಟೆಯ ನಂತರ ವಸತಿ ನಿಲಯಕ್ಕೆ ಪ್ರವೇಶಿಸಲು ಬಯಸಿದರೆ, ವಾರ್ಡನ್‌ನಿಂದ ಮುಂಚಿತವಾಗಿ ಅನುಮತಿ ಪಡೆಯಬೇಕು.";
 
-    document.getElementById("rule13").innerText =
-        "ಹಾಸಿಗೆಗಳು, ಕುರ್ಚಿಗಳು, ಮೇಜುಗಳು, ಫ್ಯಾನ್‌ಗಳು, ಬೀಗಗಳು, ಕಿಟಕಿಗಳು ಮುಂತಾದ ಪೀಠೋಪಕರಣಗಳನ್ನು ಜಾಗರೂಕತೆಯಿಂದ ಬಳಸಬೇಕು. ವಸತಿ ನಿಲಯವನ್ನು ತೊರೆಯುವಾಗ ಅವುಗಳನ್ನು ಉತ್ತಮ ಸ್ಥಿತಿಯಲ್ಲಿ ಹಸ್ತಾಂತರಿಸಬೇಕು. ಹಾನಿಯಾಗಿದ್ದರೆ ದುರಸ್ತಿ ವೆಚ್ಚವನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ಭರಿಸಬೇಕು.";
+            document.getElementById("rule12").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರು ಊಟ ಮತ್ತು ಪ್ರಾರ್ಥನೆಗಳಿಗೆ ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ಹಾಜರಾಗಬೇಕು. ಸಂಜೆ ನಡೆಯುವ ಸಾಮೂಹಿಕ ಪ್ರಾರ್ಥನೆಗೆ ಹಾಜರಾಗುವುದು ಕಡ್ಡಾಯ. ವಸತಿ ನಿಲಯಕ್ಕೆ ಪ್ರವೇಶಿಸುವಾಗ ಮತ್ತು ಹೊರಹೋಗುವಾಗ ಬಯೋಮೆಟ್ರಿಕ್ ಬೆರಳಚ್ಚು ನೋಂದಣಿ ಕಡ್ಡಾಯವಾಗಿದೆ.";
 
-    document.getElementById("rule14A").innerText =
-        "(A) ವಸತಿ ನಿಲಯದ ವಾರ್ಷಿಕ ಶೈಕ್ಷಣಿಕ ಅವಧಿಯು ಆಗಸ್ಟ್ 1ರಿಂದ ಜುಲೈ 31ರವರೆಗೆ ಇರುತ್ತದೆ. ವಿದ್ಯಾಭ್ಯಾಸವನ್ನು ಮುಂದುವರಿಸುವ ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಜುಲೈ 25ರೊಳಗೆ ಮರುಪ್ರವೇಶ ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು.";
+            document.getElementById("rule13").innerText =
+                "ಹಾಸಿಗೆಗಳು, ಕುರ್ಚಿಗಳು, ಮೇಜುಗಳು, ಫ್ಯಾನ್‌ಗಳು, ಬೀಗಗಳು, ಕಿಟಕಿಗಳು ಮುಂತಾದ ಪೀಠೋಪಕರಣಗಳನ್ನು ಜಾಗರೂಕತೆಯಿಂದ ಬಳಸಬೇಕು. ವಸತಿ ನಿಲಯವನ್ನು ತೊರೆಯುವಾಗ ಅವುಗಳನ್ನು ಉತ್ತಮ ಸ್ಥಿತಿಯಲ್ಲಿ ಹಸ್ತಾಂತರಿಸಬೇಕು. ಹಾನಿಯಾಗಿದ್ದರೆ ದುರಸ್ತಿ ವೆಚ್ಚವನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ಭರಿಸಬೇಕು.";
 
-    document.getElementById("rule14B").innerText =
-        "(B) ಹೊಸದಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವವರು ಜೂನ್ 1ರಿಂದ ಜೂನ್ 30ರೊಳಗೆ ಭರ್ತಿ ಮಾಡಿದ ಅರ್ಜಿ ನಮೂನೆಯನ್ನು ಸಲ್ಲಿಸಬೇಕು.";
+            document.getElementById("rule14A").innerText =
+                "(A) ವಸತಿ ನಿಲಯದ ವಾರ್ಷಿಕ ಶೈಕ್ಷಣಿಕ ಅವಧಿಯು ಆಗಸ್ಟ್ 1ರಿಂದ ಜುಲೈ 31ರವರೆಗೆ ಇರುತ್ತದೆ. ವಿದ್ಯಾಭ್ಯಾಸವನ್ನು ಮುಂದುವರಿಸುವ ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಜುಲೈ 25ರೊಳಗೆ ಮರುಪ್ರವೇಶ ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು.";
 
-    document.getElementById("rule15").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿಯರು ವಿದ್ಯಾಭ್ಯಾಸದ ಮೇಲೆ ಗಮನಹರಿಸಿ, ಎಲ್ಲಾ ಕಾಲೇಜು ಪರೀಕ್ಷೆಗಳಲ್ಲಿ ಉತ್ತಮವಾಗಿ ಸಾಧಿಸಬೇಕು ಮತ್ತು ಪ್ರತಿ ಸೆಮಿಸ್ಟರ್‌ನ ಫಲಿತಾಂಶ ಬಂದ ತಕ್ಷಣ ಅಂಕಪಟ್ಟಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು. ಪರೀಕ್ಷೆಯಲ್ಲಿ ಅನುತ್ತೀರ್ಣರಾದರೆ ಯಾವುದೇ ಶುಲ್ಕ ಮರುಪಾವತಿ ಇಲ್ಲದೆ ವಸತಿ ನಿಲಯದ ವಸತಿ ಸೌಲಭ್ಯವನ್ನು ಕಳೆದುಕೊಳ್ಳಬೇಕಾಗುತ್ತದೆ.";
+            document.getElementById("rule14B").innerText =
+                "(B) ಹೊಸದಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವವರು ಜೂನ್ 1ರಿಂದ ಜೂನ್ 30ರೊಳಗೆ ಭರ್ತಿ ಮಾಡಿದ ಅರ್ಜಿ ನಮೂನೆಯನ್ನು ಸಲ್ಲಿಸಬೇಕು.";
 
-    document.getElementById("rule16").innerText =
-        "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಯಾವುದೇ ಸರ್ಕಾರಿ ಅಥವಾ ಖಾಸಗಿ ಉದ್ಯೋಗವನ್ನು ಮಾಡಬಾರದು. ಹಾಗೆ ಮಾಡಿದಲ್ಲಿ ಶಿಸ್ತಿನ ಕ್ರಮ ಕೈಗೊಳ್ಳಲಾಗುತ್ತದೆ.";
+            document.getElementById("rule15").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರು ವಿದ್ಯಾಭ್ಯಾಸದ ಮೇಲೆ ಗಮನಹರಿಸಿ, ಎಲ್ಲಾ ಕಾಲೇಜು ಪರೀಕ್ಷೆಗಳಲ್ಲಿ ಉತ್ತಮವಾಗಿ ಸಾಧಿಸಬೇಕು ಮತ್ತು ಪ್ರತಿ ಸೆಮಿಸ್ಟರ್‌ನ ಫಲಿತಾಂಶ ಬಂದ ತಕ್ಷಣ ಅಂಕಪಟ್ಟಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು. ಪರೀಕ್ಷೆಯಲ್ಲಿ ಅನುತ್ತೀರ್ಣರಾದರೆ ಯಾವುದೇ ಶುಲ್ಕ ಮರುಪಾವತಿ ಇಲ್ಲದೆ ವಸತಿ ನಿಲಯದ ವಸತಿ ಸೌಲಭ್ಯವನ್ನು ಕಳೆದುಕೊಳ್ಳಬೇಕಾಗುತ್ತದೆ.";
 
-    document.getElementById("rule17").innerText =
-        "ವಿದ್ಯಾರ್ಥಿನಿಯರು ವಸತಿ ನಿಲಯದ ಆವರಣ ಮತ್ತು ಶೌಚಾಲಯಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ವಾರ್ಡನ್ ಮತ್ತು ಆಡಳಿತ ಮಂಡಳಿಯ ಸೂಚನೆಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಪಾಲಿಸಬೇಕು. ದುರ್ಬಳಕೆಯಿಂದ ಉಂಟಾಗುವ ಯಾವುದೇ ದುರಸ್ತಿ ವೆಚ್ಚವನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ಭರಿಸಬೇಕು.";
+            document.getElementById("rule16").innerText =
+                "ವಸತಿ ನಿಲಯದಲ್ಲಿ ವಾಸಿಸುವ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಯಾವುದೇ ಸರ್ಕಾರಿ ಅಥವಾ ಖಾಸಗಿ ಉದ್ಯೋಗವನ್ನು ಮಾಡಬಾರದು. ಹಾಗೆ ಮಾಡಿದಲ್ಲಿ ಶಿಸ್ತಿನ ಕ್ರಮ ಕೈಗೊಳ್ಳಲಾಗುತ್ತದೆ.";
 
-    document.getElementById("importantTitle").innerText =
-        "ಮುಖ್ಯ ಸೂಚನೆ";
+            document.getElementById("rule17").innerText =
+                "ವಿದ್ಯಾರ್ಥಿನಿಯರು ವಸತಿ ನಿಲಯದ ಆವರಣ ಮತ್ತು ಶೌಚಾಲಯಗಳನ್ನು ಸ್ವಚ್ಛವಾಗಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ವಾರ್ಡನ್ ಮತ್ತು ಆಡಳಿತ ಮಂಡಳಿಯ ಸೂಚನೆಗಳನ್ನು ಕಟ್ಟುನಿಟ್ಟಾಗಿ ಪಾಲಿಸಬೇಕು. ದುರ್ಬಳಕೆಯಿಂದ ಉಂಟಾಗುವ ಯಾವುದೇ ದುರಸ್ತಿ ವೆಚ್ಚವನ್ನು ವಿದ್ಯಾರ್ಥಿನಿಯರೇ ಭರಿಸಬೇಕು.";
 
-    document.getElementById("importantText").innerText =
-        "ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಈ ನಿಯಮಗಳನ್ನು ಜಾಗರೂಕತೆಯಿಂದ ಪಾಲಿಸಿ, ಸುರಕ್ಷಿತ, ಸ್ವಚ್ಛ ಮತ್ತು ಶಿಸ್ತಿನ ವಾತಾವರಣವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ವಸತಿ ನಿಲಯದ ಆಡಳಿತ ಮಂಡಳಿಯೊಂದಿಗೆ ಸಹಕರಿಸಬೇಕು.";
+            document.getElementById("importantTitle").innerText =
+                "ಮುಖ್ಯ ಸೂಚನೆ";
 
-    document.getElementById("backButton").innerText =
-        "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂದೆ";
+            document.getElementById("importantText").innerText =
+                "ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿನಿಯರು ಈ ನಿಯಮಗಳನ್ನು ಜಾಗರೂಕತೆಯಿಂದ ಪಾಲಿಸಿ, ಸುರಕ್ಷಿತ, ಸ್ವಚ್ಛ ಮತ್ತು ಶಿಸ್ತಿನ ವಾತಾವರಣವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಲು ವಸತಿ ನಿಲಯದ ಆಡಳಿತ ಮಂಡಳಿಯೊಂದಿಗೆ ಸಹಕರಿಸಬೇಕು.";
 
-}
+            document.getElementById("backButton").innerText =
+                "← ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗೆ ಹಿಂದೆ";
 
-</script>
+        }
+
+    </script>
 
 </body>
+
 </html>
